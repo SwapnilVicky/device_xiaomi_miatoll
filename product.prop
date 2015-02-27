@@ -2,8 +2,8 @@
 ro.charger.enable_suspend=true
 
 # Display
-debug.sf.hw=0
-debug.egl.hw=0
+debug.sf.hw=1
+debug.egl.hw=1
 debug.sf.latch_unsignaled=1
 debug.mdpcomp.logs=0
 vendor.gralloc.disable_ubwc=0
