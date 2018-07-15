@@ -841,7 +841,6 @@ vendor/lib64/libqsap_sdk.so
 -product/priv-app/HotwordEnrollmentXGoogleHEXAGON/HotwordEnrollmentXGoogleHEXAGON.apk;PRESIGNED
 -product/priv-app/HotwordEnrollmentOKGoogleHEXAGON/HotwordEnrollmentOKGoogleHEXAGON.apk;PRESIGNED
 system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml
-product/etc/permissions/privapp-permissions-hotword.xml
 system/etc/sysconfig/hotword-hiddenapi-package-whitelist.xml
 system_ext/framework/com.android.hotwordenrollment.common.util.jar
 
