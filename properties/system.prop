@@ -142,9 +142,6 @@ ro.vendor.use_data_netmgrd=true
 telephony.lteOnCdmaDevice=1
 persist.sys.fflag.override.settings_provider_model=false
 
-# SSR
-persist.vendor.ssr.restart_level=ALL_ENABLE
-
 #thermal configs path
 sys.thermal.data.path=/data/vendor/thermal/
 
