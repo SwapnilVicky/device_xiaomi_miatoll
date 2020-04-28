@@ -28,6 +28,9 @@ ro.media.recorder-max-base-layer-fps=60
 persist.mm.enable.prefetch=true
 vendor.mm.enable.qcom_parser=16777199
 
+# Pre-Rendering
+ro.vendor.perf.scroll_opt=true
+
 # Render
 debug.cpurend.vsync=false
 
