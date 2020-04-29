@@ -153,7 +153,6 @@ persist.vendor.radio.report_codec=1
 persist.vendor.radio.snapshot_enabled=1
 persist.vendor.radio.snapshot_timer=5
 ril.subscription.types=NV,RUIM
-ro.telephony.default_network=22,22
 telephony.lteOnCdmaDevice=1
 persist.sys.fflag.override.settings_provider_model=false
 
