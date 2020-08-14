@@ -111,6 +111,7 @@ void load_device_properties() {
                 "joyeuse_global-user 12 RKQ1.211019.001 V14.0.3.0.SJZMIXM release-keys",
                 "Redmi", "joyeuse", "Redmi Note 9 Pro");
         property_override("ro.product.mod_device", "joyeuse_global");
+        property_override("ro.boot.product.hardware.sku", "nfc");
     }
 }
 

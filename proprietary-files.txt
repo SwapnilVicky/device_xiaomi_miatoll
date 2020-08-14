@@ -26,3 +26,6 @@ vendor/lib64/camera/com.qti.tuned.sunny_s5kgw1.bin|bf89cf6c63d33370f1762bd3a5536
 
 # Camera sensors (joyeuse) - from V14.0.3.0.SJZMIXM (JOYEUSEGlobal)
 vendor/lib64/camera/com.qti.tuned.ofilm_s5kgw1.bin|4994082692a72eb45a5ea47026ad1a7e6abbc954
+
+# NFC - from V14.0.3.0.SJZMIXM (JOYEUSEGlobal)
+vendor/lib/libpn553_fw.so|a8e29cc3ebb2e0df0fb505fc2da9c69a015680fb
