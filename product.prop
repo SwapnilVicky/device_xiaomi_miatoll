@@ -27,6 +27,9 @@ ro.incremental.enable=1
 # Force triple frame buffers
 ro.surface_flinger.max_frame_buffer_acquired_buffers=3
 
+# Shutdown
+ro.build.shutdown_timeout=2
+
 # IORap
 ro.iorapd.enable=true
 iorapd.perfetto.enable=true
