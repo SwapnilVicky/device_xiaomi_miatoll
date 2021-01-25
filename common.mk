@@ -39,6 +39,7 @@ PRODUCT_PACKAGES += \
     android.hardware.audio@6.0-impl:32 \
     android.hardware.audio.effect@6.0-impl:32 \
     android.hardware.soundtrigger@2.2-impl \
+    sound_trigger.primary.atoll \
     android.hardware.audio@2.0-service
 
 PRODUCT_PACKAGES += \
