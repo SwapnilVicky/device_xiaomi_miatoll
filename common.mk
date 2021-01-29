@@ -17,6 +17,9 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
 PRODUCT_PACKAGES += \
     fs_config_files
 
+# Apex
+$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
+
 # API
 PRODUCT_SHIPPING_API_LEVEL := 29
 
@@ -373,6 +376,8 @@ PRODUCT_PACKAGES += \
 # VNDK
 PRODUCT_COPY_FILES += \
     prebuilts/vndk/v29/arm64/arch-arm64-armv8-a/shared/vndk-core/libhidlcache.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhidlcache.so
+
+PRODUCT_EXTRA_VNDK_VERSIONS := 29
 
 # Vulkan
 PRODUCT_COPY_FILES += \
