@@ -11,7 +11,6 @@ cpp.set.clock                           u:object_r:vendor_default_prop:s0
 disable.cpp.power.collapse              u:object_r:vendor_default_prop:s0
 vendor.camera.eis.gyro_name             u:object_r:vendor_camera_prop:s0
 vidc.enc.dcvs.extra-buff-count          u:object_r:vendor_default_prop:s0
-vendor.camera.aux.packageblacklist u:object_r:vendor_camera_prop:s0
 vendor.camera.aux.packagelist u:object_r:vendor_camera_prop:s0
 
 #IR
