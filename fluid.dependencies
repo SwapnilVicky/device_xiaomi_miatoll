@@ -6,8 +6,13 @@
   },
   {
     "remote":      "fluid-devices",
-    "repository":  "vendor_xiaomi",
-    "target_path": "vendor/xiaomi"
+    "repository":  "vendor_xiaomi_miatoll",
+    "target_path": "vendor/xiaomi/miatoll"
+  },
+  {
+    "remote":      "fluid-devices",
+    "repository":  "vendor_xiaomi_sm6250-common",
+    "target_path": "vendor/xiaomi/sm6250-common"
   },
   {
     "remote":      "fluid-devices",
