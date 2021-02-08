@@ -7,7 +7,6 @@
 COMMON_PATH := device/xiaomi/sm6250-common
 
 BUILD_BROKEN_DUP_RULES := true
-SELINUX_IGNORE_NEVERALLOWS := true
 
 # APEX image
 DEXPREOPT_GENERATE_APEX_IMAGE := true
