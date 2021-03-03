@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/fluid_miatoll.mk
+    $(LOCAL_DIR)/lineage_miatoll.mk
 
 COMMON_LUNCH_CHOICES := \
-    fluid_miatoll-user \
-    fluid_miatoll-userdebug \
-    fluid_miatoll-eng
+    lineage_miatoll-user \
+    lineage_miatoll-userdebug \
+    lineage_miatoll-eng
