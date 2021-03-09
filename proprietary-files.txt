@@ -68,6 +68,7 @@ vendor/lib64/rfsa/adsp/libsns_device_mode_skel.so
 vendor/lib64/rfsa/adsp/libsns_low_lat_stream_skel.so
 
 # Alarm
+-product/app/PowerOffAlarm/PowerOffAlarm.apk
 vendor/bin/hw/vendor.qti.hardware.alarm@1.0-service
 vendor/bin/power_off_alarm
 vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc
@@ -780,6 +781,14 @@ vendor/lib64/vendor.qti.hardware.qccsyshal@1.0.so
 vendor/lib/libqsap_sdk.so
 vendor/lib64/libqsap_sdk.so
 
+# HotwordEnrollment
+-product/priv-app/HotwordEnrollmentXGoogleHEXAGON/HotwordEnrollmentXGoogleHEXAGON.apk;PRESIGNED
+-product/priv-app/HotwordEnrollmentOKGoogleHEXAGON/HotwordEnrollmentOKGoogleHEXAGON.apk;PRESIGNED
+system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml
+product/etc/permissions/privapp-permissions-hotword.xml
+system/etc/sysconfig/hotword-hiddenapi-package-whitelist.xml
+system_ext/framework/com.android.hotwordenrollment.common.util.jar
+
 # IMS
 -system_ext/app/uceShimService/uceShimService.apk
 system_ext/etc/permissions/com.qualcomm.qti.imscmservice-V2.0-java.xml
@@ -926,7 +935,6 @@ vendor/lib64/libqcbor.so
 vendor/lib64/libqtikeymaster4.so
 
 # Listen
-vendor/lib/hw/sound_trigger.primary.atoll.so
 vendor/lib/libadpcmdec.so
 vendor/lib/libcapiv2svacnn.so
 vendor/lib/libcapiv2vop.so
@@ -936,7 +944,6 @@ vendor/lib/libgcs-osal.so
 vendor/lib/libgcs.so
 vendor/lib/liblistensoundmodel2.so
 vendor/lib/libmulawdec.so
-vendor/lib64/hw/sound_trigger.primary.atoll.so
 vendor/lib64/libcapiv2svacnn.so
 vendor/lib64/libcapiv2vop.so
 vendor/lib64/libgcs-calwrapper.so
@@ -1397,9 +1404,6 @@ vendor/firmware/Drv2624Date.ini
 # WiFi
 vendor/bin/cnss-daemon
 
-#wfd hack
-vendor/lib64/libdisplayconfig.so:priv-app/WfdService/lib/arm64/libdisplayconfig.so
-
 # WiFi Display
 -framework/WfdCommon.jar
 system_ext/bin/rtspclient
@@ -1416,7 +1420,6 @@ system_ext/lib/libmmrtpdecoder.so
 system_ext/lib/libmmrtpencoder.so
 system_ext/lib/libwfdaac.so
 system_ext/lib/libwfdavenhancements.so
-system_ext/lib/libwfdclient.so
 system_ext/lib/libwfdcommonutils.so
 system_ext/lib/libwfdconfigutils.so
 system_ext/lib/libwfddisplayconfig.so|f820d710151f2128422cd759891ff466b101844c
@@ -1452,7 +1455,6 @@ system_ext/lib64/libwfduibcsink.so
 system_ext/lib64/libwfduibcsinkinterface.so
 system_ext/lib64/libwfduibcsrc.so
 system_ext/lib64/libwfduibcsrcinterface.so
-system_ext/lib64/vendor.qti.hardware.wifidisplaysession@1.0.so
 -system_ext/priv-app/WfdService/WfdService.apk
 vendor/bin/wfdhdcphalservice
 vendor/bin/wfdvndservice
