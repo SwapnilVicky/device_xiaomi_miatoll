@@ -1,1 +1,1 @@
-allow vendor_ims sysfs:file { read };
+allow vendor_ims sysfs:file { read open };

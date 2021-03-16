@@ -13,3 +13,4 @@ set_prop(vendor_init, camera_prop)
 
 allow vendor_init persist_debug_prop:file { read };
 allow vendor_init default_prop:file { read };
+allow vendor_init default_prop:property_service set;
