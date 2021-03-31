@@ -467,7 +467,18 @@
             <instance>qccvndhal</instance>
         </interface>
         <fqname>@1.0::IQccvndhal/qccvndhal</fqname>
-    </hal> <!-- QCC HAL Service -->
+    </hal> 
+    <hal format="hidl">
+        <name>vendor.qti.hardware.data.iwlan</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IIWlan</name>
+            <instance>slot1</instance>
+            <instance>slot2</instance>
+        </interface>
+    </hal>
+    <!-- QCC HAL Service -->
     <hal format="hidl">
         <name>vendor.qti.hardware.iop</name>
         <transport>hwbinder</transport>
