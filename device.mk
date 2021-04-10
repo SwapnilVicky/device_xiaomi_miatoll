@@ -52,3 +52,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/thermal/thermal-engine-map-joyeuse.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-map-joyeuse.conf \
     $(LOCAL_PATH)/thermal/thermal-engine-normal-joyeuse.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-normal-joyeuse.conf \
     $(LOCAL_PATH)/thermal/thermal-engine-camera-joyeuse.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-camera-joyeuse.conf
+
+# Widevine
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/widevine/32bit_libcpion_curtana.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcpion_curtana.so \
+    $(LOCAL_PATH)/widevine/32bit_liboemcrypto_curtana.so:$(TARGET_COPY_OUT_VENDOR)/lib/liboemcrypto_curtana.so \
+    $(LOCAL_PATH)/widevine/64bit_libcpion_curtana.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcpion_curtana.so \
+    $(LOCAL_PATH)/widevine/64bit_liboemcrypto_curtana.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liboemcrypto_curtana.so
