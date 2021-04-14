@@ -390,6 +390,8 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_EXTRA_VNDK_VERSIONS := 29
 
+PRODUCT_PACKAGES += vndk_package
+
 # Vulkan
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.vulkan.compute-0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.vulkan.compute.xml \
