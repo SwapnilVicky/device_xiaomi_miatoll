@@ -6,6 +6,12 @@
 # Biometric
 /vendor/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.1-service\.xiaomi_sm6250                               u:object_r:hal_fingerprint_default_exec:s0
 
+# Camera
+/mnt/vendor/persist/camera(/.*)? u:object_r:camera_persist_file:s0
+
+# Device Nodes
+/dev/stune(/.*)?                                        u:object_r:cgroup:s0
+
 # Fingerprint
 /data/gf_data(/.*)?                             u:object_r:fingerprintd_data_file:s0
 /data/vendor/fpc(/.*)?                          u:object_r:fingerprint_vendor_data_file:s0
@@ -21,7 +27,16 @@
 #Light
 /vendor/bin/hw/android\.hardware\.light@2\.0-service\.xiaomi_sm6250    u:object_r:hal_light_default_exec:s0
 
-#Perf
+# Mac
+/data/vendor/mac_addr(/.*)?                     u:object_r:vendor_wifi_vendor_data_file:s0
+/vendor/bin/nv_mac                              u:object_r:vendor_wcnss_service_exec:s0
+
+# Misys
+/(vendor|system/vendor)/bin/hw/vendor\.xiaomi\.hardware\.misys@1\.0-service          u:object_r:hal_misys_default_exec:s0
+/(vendor|system/vendor)/bin/hw/vendor\.xiaomi\.hardware\.misys@2\.0-service          u:object_r:hal_misys_default_exec:s0
+/(vendor|system/vendor)/bin/hw/vendor\.xiaomi\.hardware\.misys@3\.0-service          u:object_r:hal_misys_default_exec:s0
+
+# Perf
 /vendor/bin/hw/vendor\.qti\.hardware\.perf@2\.2-service\.xiaomi_sm6250    u:object_r:same_process_hal_file:s0
 
 # Power HAL
@@ -29,3 +44,9 @@
 
 # Sys Files (wakeup)
 /sys/devices/virtual/diag/diag/wakeup[0-99]+(/.*)? u:object_r:sysfs_wakeup:s0
+
+# Thermal Files
+/sys/module/msm_thermal/core_control/enabled		u:object_r:sysfs_corecontrol:s0
+/sys/module/msm_thermal/parameters/enabled		u:object_r:sysfs_msmthermal:s0
+/sys/module/msm_thermal/vdd_restriction/enabled		u:object_r:sysfs_vddrestrict:s0
+

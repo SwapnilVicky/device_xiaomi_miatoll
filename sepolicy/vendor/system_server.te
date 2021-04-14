@@ -4,3 +4,5 @@ get_prop(system_server, camera_prop)
 
 # Smart charger
 allow system_server sysfs_battery_supply:file { getattr open write };
+
+get_prop(system_server, vendor_display_notch_prop)
