@@ -9,3 +9,8 @@ allow system_app sysfs_thermal:file rw_file_perms;
 
 # Battery Health
 r_dir_file(system_app, sysfs_battery_supply);
+
+allow system_app apk_data_file:dir { write };
+allow system_app sysfs_zram:dir { search };
+allow system_app sysfs_zram:file { read };
+allow system_app sysfs_thermal:file { write };
