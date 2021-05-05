@@ -11,9 +11,6 @@ ro.lmk.log_stats=true
 # Incremental FS
 ro.incremental.enable=1
 
-# USAP
-persist.device_config.runtime_native.usap_pool_enabled=true
-
 # Use Vulkan backend for Skia UI rendering
 debug.hwui.renderer=skiavk
 
