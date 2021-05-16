@@ -73,6 +73,12 @@ void load_dalvik_properties() {
     property_override("dalvik.vm.heapmaxfree", heapmaxfree);
 }
 
+void load_audio_properties() {
+    property_override("persist.vendor.audio.voicecall.speaker.stereo", "false");
+    property_override("vendor.audio.offload.track.enable", "false");
+}
+
 void load_common_properties() {
     load_dalvik_properties();
+    load_audio_properties();
 }
