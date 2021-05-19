@@ -11,8 +11,5 @@ ro.lmk.log_stats=true
 # Incremental FS
 ro.incremental.enable=1
 
-# Use Vulkan backend for Skia UI rendering
-debug.hwui.renderer=skiavk
-
 # Force triple frame buffers
 ro.surface_flinger.max_frame_buffer_acquired_buffers=3
