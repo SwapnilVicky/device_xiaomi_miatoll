@@ -11,6 +11,7 @@ persist.audio.fluence.voicecall=true
 persist.audio.fluence.voicerec=false
 ro.af.client_heap_size_kbyte=7168
 ro.qc.sdk.audio.fluencetype=none
+vendor.mm.enable.qcom_parser=16777215
 
 # Bluetooth
 persist.vendor.btstack.aac_frm_ctl.enabled=true
@@ -37,6 +38,7 @@ ro.vendor.bluetooth.wipower=false
 persist.vendor.bt.soc.scram_freqs=192
 persist.bt.a2dp.aac_disable=false
 persist.vendor.bt.aac_frm_ctl.enabled=true
+vendor.bluetooth.soc=cherokee
 
 # CNE
 persist.vendor.cne.feature=1
@@ -91,7 +93,6 @@ media.stagefright.enable-qcp=true
 media.stagefright.enable-scan=true
 media.stagefright.thumbnail.prefer_hw_codecs=true
 ro.media.recorder-max-base-layer-fps=60
-vendor.mm.enable.qcom_parser=131071983
 
 # Netflix
 ro.netflix.bsp_rev=Q6250-19132-1
@@ -107,6 +108,7 @@ DEVICE_PROVISIONED=1
 keyguard.no_require_sim=true
 persist.data.df.agg.dl_pkt=10
 persist.data.df.agg.dl_size=4096
+persist.radio.atfwd.start=false
 persist.data.df.dev_name=rmnet_usb0
 persist.data.df.dl_mode=5
 persist.data.df.iwlan_mux=9
@@ -125,6 +127,12 @@ ril.subscription.types=NV,RUIM
 ro.telephony.default_network=22,22
 ro.vendor.use_data_netmgrd=true
 telephony.lteOnCdmaDevice=1
+
+# SSR
+persist.vendor.ssr.restart_level=ALL_ENABLE
+
+#thermal configs path
+sys.thermal.data.path=/data/vendor/thermal/
 
 # Sensors
 persist.vendor.sensors.enable.mag_filter=true

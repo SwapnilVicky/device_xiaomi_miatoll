@@ -88,15 +88,11 @@ vendor.audio.feature.vbat.enable=true
 vendor.audio.feature.wsa.enable=false
 vendor.audio.feature.audiozoom.enable=false
 vendor.audio.feature.snd_mon.enable=true
-vendor.mm.enable.qcom_parser=16777215
 
 # Bluetooth
 persist.bluetooth.a2dp_offload.cap=sbc-aac-aptx-aptxhd-ldac
 persist.bluetooth.a2dp_offload.disabled=false
-persist.vendor.bt.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aac-ldac
 persist.vendor.bt.aac_frm_ctl.enabled=true
-persist.vendor.btstack.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aac-ldac
-persist.vendor.btstack.enable.splita2dp=true
 persist.vendor.qcom.bluetooth.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aac-ldac-aptxadaptive
 persist.vendor.qcom.bluetooth.aac_frm_ctl.enabled=true
 persist.vendor.qcom.bluetooth.aac_vbr_ctl.enabled=false
@@ -105,18 +101,11 @@ persist.vendor.qcom.bluetooth.scram.enabled=true
 persist.vendor.qcom.bluetooth.soc=cherokee
 persist.vendor.qcom.bluetooth.twsp_state.enabled=false
 ro.bluetooth.a2dp_offload.supported=true
-ro.bluetooth.emb_wp_mode=true
-ro.bluetooth.library_name=libbluetooth_qti.so
-ro.bluetooth.wipower=true
 ro.vendor.bluetooth.wipower=false
-vendor.bluetooth.soc=cherokee
 vendor.qcom.bluetooth.soc=cherokee
 
 # Camera
 camera.disable_zsl_mode=1
-
-# CNE
-persist.vendor.cne.feature=1
 
 # Crypto
 ro.crypto.allow_encrypt_override=true
@@ -164,16 +153,7 @@ ro.hardware.keystore_desede=true
 debug.stagefright.ccodec=1
 debug.stagefright.omx_default_rank=0
 drm.service.enabled=true
-media.settings.xml=/vendor/etc/media_profiles_vendor.xml
-media.stagefright.enable-aac=true
-media.stagefright.enable-fma2dp=true
-media.stagefright.enable-http=true
-media.stagefright.enable-player=true
-media.stagefright.enable-qcp=true
-media.stagefright.enable-scan=true
 media.stagefright.thumbnail.prefer_hw_codecs=true
-ro.media.recorder-max-base-layer-fps=60
-vendor.mm.enable.qcom_parser=16777215
 
 # PASR
 vendor.power.pasr.enabled=true
@@ -185,9 +165,6 @@ ro.vendor.extension_library=libqti-perfd-client.so
 ro.control_privapp_permissions=log
 
 # Radio
-DEVICE_PROVISIONED=1
-persist.data.df.dev_name=rmnet_usb0
-persist.radio.atfwd.start=false
 persist.radio.multisim.config=dsds
 persist.vendor.data.iwlan.enable=true
 persist.vendor.data.mode=concurrent
@@ -202,7 +179,6 @@ persist.vendor.radio.sib16_support=1
 persist.vendor.radio.snapshot_enabled=1
 persist.vendor.radio.snapshot_timer=5
 persist.vendor.radio.add_power_save=1
-ril.subscription.types=NV,RUIM
 ro.telephony.default_network=22,20
 ro.telephony.iwlan_operation_mode=legacy
 ro.vendor.use_data_netmgrd=true
@@ -213,14 +189,7 @@ persist.vendor.sensors.odl.adsp=true
 persist.vendor.sensors.support_direct_channel=false
 persist.vendor.sensors.allow_non_default_discovery=true
 
-# SSR
-persist.vendor.ssr.restart_level=ALL_ENABLE
-
-#thermal configs path
-sys.thermal.data.path=/data/vendor/thermal/
-
 # WFD
-persist.debug.wfd.enable=1
 persist.sys.wfd.virtual=0
 
 # Wi-Fi
