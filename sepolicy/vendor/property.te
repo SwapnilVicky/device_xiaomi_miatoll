@@ -3,3 +3,4 @@ type mlipay_prop, property_type;
 type thermal_engine_prop, property_type;
 type lirc_prop, property_type;
 type camera_prop, property_type;
+type vendor_ro_camera_prop, property_type;
