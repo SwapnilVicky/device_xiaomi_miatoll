@@ -722,5 +722,8 @@
         <item>871.5</item>
         <item>115</item>
     </array>
+    
+    <!-- Should the pinner service pin the Camera application? -->
+    <bool name="config_pinnerCameraApp">false</bool>
 
 </resources>
