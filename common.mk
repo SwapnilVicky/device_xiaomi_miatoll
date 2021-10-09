@@ -60,9 +60,7 @@ PRODUCT_PACKAGES += \
 
 # Bluetooth
 PRODUCT_PACKAGES += \
-    audio.bluetooth.default \
-    libbthost_if \
-    BluetoothQti
+    audio.bluetooth.default
 
 PRODUCT_PACKAGES += \
     android.hardware.bluetooth.audio@2.1-impl \
@@ -104,8 +102,7 @@ PRODUCT_COPY_FILES += \
 
 # Component override
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/component-overrides.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sysconfig/component-overrides.xml \
-    $(LOCAL_PATH)/configs/component-overrides_qti.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/component-overrides.xml
+    $(LOCAL_PATH)/configs/component-overrides.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sysconfig/component-overrides.xml 
 
 # DebugFS
 PRODUCT_SET_DEBUGFS_RESTRICTIONS := true
