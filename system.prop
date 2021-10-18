@@ -134,6 +134,9 @@ sys.thermal.data.path=/data/vendor/thermal/
 # Sensors
 persist.vendor.sensors.enable.mag_filter=true
 
+# Storage.xml moment
+persist.sys.binary_xml=false
+
 # WFD
 persist.debug.wfd.enable=1
 persist.sys.wfd.virtual=0
