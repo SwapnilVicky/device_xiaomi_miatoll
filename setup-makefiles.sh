@@ -9,7 +9,7 @@ set -e
 
 INITIAL_COPYRIGHT_YEAR=2020
 
-DEVICE_COMMON=sm6250-common
+DEVICE=miatoll
 VENDOR=xiaomi
 
 # Load extract_utils and do some sanity checks
@@ -26,7 +26,7 @@ fi
 source "${HELPER}"
 
 # Initialize the helper for common
-setup_vendor "${DEVICE_COMMON}" "${VENDOR}" "${ANDROID_ROOT}" true
+setup_vendor "${DEVICE}" "${VENDOR}" "${ANDROID_ROOT}" true
 
 # Copyright headers and guards
 write_headers "curtana"
