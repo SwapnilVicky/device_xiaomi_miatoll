@@ -17,7 +17,7 @@
         android:label="@string/device_settings_app_name"
         android:persistent="true">
 
-        <receiver android:name=".BootCompletedReceiver">
+        <receiver android:name=".BootCompletedReceiver" android:exported="true">
             <intent-filter android:priority="1000">
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -27,6 +27,7 @@
         <activity
             android:name=".display.LcdFeaturesPreferenceActivity"
             android:label="@string/lcd_features_title"
+            android:exported="true"
             android:theme="@style/Theme.Main">
             <intent-filter>
                 <action android:name="com.android.settings.action.IA_SETTINGS" />
@@ -42,6 +43,7 @@
         <activity
             android:name=".thermal.ThermalActivity"
             android:label="@string/thermal_title"
+            android:exported="true"
             android:icon="@drawable/ic_thermal_settings"
             android:theme="@style/Theme.Main">
             <intent-filter>
@@ -61,6 +63,7 @@
         <activity
             android:name=".speaker.ClearSpeakerActivity" 
             android:label="@string/clear_speaker_title"
+            android:exported="true"
             android:theme="@style/Theme.Main">
             <intent-filter>
                 <action android:name="com.android.settings.action.IA_SETTINGS" />
@@ -71,12 +74,14 @@
 
         <service
             android:name=".thermal.ThermalService"
+            android:exported="true"
             android:permission="ThermalService">
         </service>
 
         <service
             android:name=".display.CabcTileService"
             android:icon="@drawable/ic_cabc"
+            android:exported="true"
             android:label="@string/lcd_cabc_title"
             android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
             <intent-filter>
