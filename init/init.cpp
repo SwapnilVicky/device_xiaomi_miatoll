@@ -69,6 +69,9 @@ void load_device_properties() {
         if (region == "Global_TWO") {
             set_device_props(
                     "Redmi", "curtana", "Redmi Note 9S");
+        } else if (region == "Global_PA") {
+            set_device_props(
+                    "Redmi", "curtana", "Redmi Note 9S");
         } else if (region == "India") {
             set_device_props(
                     "Redmi", "curtana", "Redmi Note 9 Pro");
