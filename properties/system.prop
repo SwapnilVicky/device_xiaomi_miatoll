@@ -1,6 +1,3 @@
-# Apex
-ro.apex.updatable=true
-
 # Audio
 audio.offload.min.duration.secs=30
 persist.audio.button_jack.profile=volume
