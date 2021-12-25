@@ -13,6 +13,9 @@ ro.af.client_heap_size_kbyte=7168
 ro.qc.sdk.audio.fluencetype=none
 vendor.mm.enable.qcom_parser=16777215
 
+#AvoidGfxAccel 
+ro.config.avoid_gfx_accel=true
+
 # Bluetooth
 persist.vendor.btstack.aac_frm_ctl.enabled=true
 persist.vendor.service.bdroid.soc.alwayson=true
