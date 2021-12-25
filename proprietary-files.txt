@@ -97,23 +97,13 @@ vendor/lib/libhdmiedid.so
 vendor/lib/libhfp.so
 vendor/lib/libsndmonitor.so
 vendor/lib/libspkrprot.so
-vendor/lib64/btaudio_offload_if.so
-vendor/lib64/libacdb-fts.so
-vendor/lib64/libacdbloader.so
-vendor/lib64/libacdbrtac.so
-vendor/lib64/libadiertac.so
-vendor/lib64/libaudcal.so
 vendor/lib64/libaudioalsa.so
-vendor/lib64/libaudioconfigstore.so
-vendor/lib64/libaudioparsers.so
 vendor/lib64/libaudio_log_utils.so
-vendor/lib64/libqtigef.so
 vendor/lib64/libtinycompress.so
 vendor/lib64/liba2dpoffload.so
 vendor/lib64/libbatterylistener.so
 vendor/lib64/libcirrusspkrprot.so
 vendor/lib64/libcomprcapture.so
-vendor/lib64/libhdmipassthru.so
 vendor/lib64/libexthwplugin.so
 vendor/lib64/libhfp.so
 vendor/lib64/libsndmonitor.so
@@ -125,7 +115,6 @@ vendor/lib/libhdmipassthru.so
 system_ext/etc/permissions/audiosphere.xml
 -system_ext/framework/audiosphere.jar
 vendor/lib/soundfx/libasphere.so
-vendor/lib64/soundfx/libasphere.so
 
 # Audio Sound FX
 vendor/lib/soundfx/libaudiopreprocessing.so
@@ -138,10 +127,6 @@ vendor/lib/soundfx/libqcompostprocbundle.so
 vendor/lib/soundfx/libqcomvisualizer.so
 vendor/lib/soundfx/libqcomvoiceprocessing.so
 vendor/lib64/soundfx/libaudiopreprocessing.so
-vendor/lib64/soundfx/libqcbassboost.so
-vendor/lib64/soundfx/libqcreverb.so
-vendor/lib64/soundfx/libqcvirt.so
-vendor/lib64/soundfx/libshoebox.so
 vendor/lib64/soundfx/libqcompostprocbundle.so
 vendor/lib64/soundfx/libqcomvisualizer.so
 vendor/lib64/soundfx/libqcomvoiceprocessing.so
@@ -183,9 +168,6 @@ vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so
 vendor/lib/libbluetooth_audio_session_qti.so
 vendor/lib/hw/audio.bluetooth_qti.default.so
 vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so
-vendor/lib64/libbluetooth_audio_session_qti.so
-vendor/lib64/hw/audio.bluetooth_qti.default.so
-vendor/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so
 
 # Camera
 vendor/etc/camera/camxoverridesettings.txt
