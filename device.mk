@@ -301,7 +301,7 @@ PRODUCT_COPY_FILES += \
 
 # Notch Cutout
 PRODUCT_PACKAGES += \
-    NoCutoutOverlay \
+    miatollNoCutoutOverlay \
     NotchBarKiller
 
 # Overlays
