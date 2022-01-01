@@ -1,17 +1,22 @@
-# Allow init to bind mount vendor configs file
 allow init vendor_configs_file:file mounton;
 
-# Allow kernel tracing to mount
-allow init debugfs_tracing_debug:dir mounton;
+allow init same_process_hal_file:file execute;
 
-allow init sysfs_battery_supply:file { setattr };
-allow init vendor_file:file mounton;
+allow init adsprpcd_file:file mounton;
+
+allow init hal_fingerprint_default:process { ptrace };
+
+allow init hwservicemanager:binder { call  transfer };
+
+allow init init:capability { sys_nice };
+
+allow init per_boot_file:file ioctl;
+allowxperm init per_boot_file:file ioctl { F2FS_IOC_SET_PIN_FILE };
 
 # Allow init to read and write to vendor_sysfs_graphics
 allow init vendor_sysfs_graphics:dir search;
 allow init vendor_sysfs_graphics:file rw_file_perms;
 
-# game mode
 allow init vendor_sysfs_cpu_boost:{ file lnk_file } rw_file_perms;
 allow init vendor_sysfs_devfreq:{ file lnk_file } rw_file_perms;
 allow init vendor_sysfs_kgsl:{ file lnk_file } rw_file_perms;

@@ -1,19 +1,20 @@
-typeattribute vendor_init data_between_core_and_vendor_violators;
+set_prop(vendor_init, vendor_power_prop)
+set_prop(vendor_init, vendor_alarm_boot_prop)
+set_prop(vendor_init, vendor_video_prop)
 
 allow vendor_init {
-  system_data_file
-  tombstone_data_file
-}:dir { create search getattr open read setattr ioctl write add_name remove_name rmdir relabelfrom };
-allow vendor_init proc_dirty:file write;
+  vendor_debugfs_clk
+  proc_dirty
+  proc
+}:file w_file_perms;
 
-allow init adsprpcd_file:file mounton;
+allow vendor_init block_device:lnk_file setattr;
+allow vendor_init vendor_camera_prop:property_service set;
 
-set_prop(vendor_init, vendor_freq_prop)
-set_prop(vendor_init, vendor_camera_prop)
-set_prop(vendor_init, camera_prop)
+allow vendor_init input_device:chr_file { create setattr unlink rw_file_perms };
+
+allow vendor_init vendor_dirac_prop:property_service set;
+
+allow vendor_init default_prop:file { read };
 
 allow vendor_init persist_debug_prop:file { read };
-allow vendor_init default_prop:file { read };
-allow vendor_init vendor_default_prop:property_service { set };
-# Dirac
-set_prop(vendor_init, dirac_prop)
