@@ -88,8 +88,7 @@ RELAX_USES_LIBRARY_CHECK := true
 
 # Camera
 PRODUCT_PACKAGES += \
-    libgui_vendor \
-    Snap
+    libgui_vendor 
 
 PRODUCT_PACKAGES += \
     android.frameworks.sensorservice@1.0.vendor \

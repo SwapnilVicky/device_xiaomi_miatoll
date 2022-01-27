@@ -44,7 +44,7 @@ persist.vendor.bt.aac_frm_ctl.enabled=true
 vendor.bluetooth.soc=cherokee
 
 # Camera
-vendor.camera.aux.packagelist=org.codeaurora.snapcam,org.lineageos.snap,com.android.camera2,com.android.camera
+vendor.camera.aux.packagelist=com.android.camera2,com.android.camera
 persist.vendor.camera.privapp.list=com.android.camera
 
 # CNE
