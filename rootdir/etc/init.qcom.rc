@@ -915,4 +915,11 @@ on property:sys.boot_completed=1
     chmod 440 /proc/net/unix
 
 # Enable UFS powersaving
-    write /sys/devices/platform/soc/${ro.boot.bootdevice}/clkgate_enable 1    
+    write /sys/devices/platform/soc/${ro.boot.bootdevice}/clkgate_enable 1
+
+service vendor.power /vendor/bin/hw/android.hardware.power-service-qti
+    override
+    class hal
+    user system
+    group system input
+    priority -20
