@@ -87,6 +87,8 @@ service sec_nvm /vendor/bin/sec_nvm
     group system
 
 on post-fs-data
+    mkdir /data/vendor/fpc 0770 system system
+    mkdir /data/vendor/goodix 0770 system system
     mkdir /data/vendor/touchpad 0775 system system
     mkdir /data/vendor/hbtp 0750 system system
     mkdir /persist/qti_fp 0700 system system
