@@ -58,6 +58,7 @@ USE_DEX2OAT_DEBUG := false
 # Display
 TARGET_SCREEN_DENSITY := 440
 TARGET_USES_HWC2 := true
+USE_OPENGL_RENDERER := true
 
 # Filesystem
 TARGET_FS_CONFIG_GEN := $(COMMON_PATH)/configs/config.fs
