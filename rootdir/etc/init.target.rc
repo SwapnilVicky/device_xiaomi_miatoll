@@ -230,6 +230,7 @@ on charger
     setprop sys.usb.controller a600000.dwc3
     setprop sys.usb.configfs 1
     chown system system /sys/class/leds/red/brightness
+    write /sys/class/leds/red/brightness 255
     chmod 0666 /sys/class/leds/red/brightness
     chmod 0666 /sys/class/backlight/panel0-backlight/brightness
     mkdir /data/vendor/charge_logger 0771 system system
