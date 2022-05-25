@@ -108,7 +108,7 @@ on boot
     chmod 0444 /sys/class/drm/card0-DSI-1/panel_info
     write /dev/cpuset/audio-app/cpus 1-2
     chown system system /sys/kernel/hbtp/display_pwr
-    start rmt_storage
+    start vendor.rmt_storage
     start rfs_access
     write /dev/cpuset/top-app/cpus 0-3
     write /dev/cpuset/foreground/cpus 0-3
