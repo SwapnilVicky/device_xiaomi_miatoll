@@ -1,0 +1,1 @@
+require board=curtana|excalibur|gram|joyeuse
