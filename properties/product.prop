@@ -18,12 +18,6 @@ vendor.display.disable_layer_stitch=0
 vendor.display.disable_hw_recovery_dump=1
 vendor.display.disable_rotator_downscale=1
 
-# IORap
-ro.iorapd.enable=true
-iorapd.perfetto.enable=true
-iorapd.readahead.enable=true
-persist.device_config.runtime_native_boot.iorap_readahead_enable=true
-
 # LMKD
 ro.config.low_ram=false
 ro.lmk.log_stats=true
@@ -39,6 +33,12 @@ sys.fflag.override.settings_enable_monitor_phantom_procs=false
 
 # Shutdown
 ro.build.shutdown_timeout=2
+
+# Telephony
+persist.vendor.ims.disableADBLogs=1
+persist.vendor.ims.disableDebugLogs=1
+persist.vendor.ims.disableIMSLogs=1
+persist.vendor.ims.disableQXDMLogs=1
 
 # Transcoding related property.
 debug.media.transcoding.codec_max_operating_rate_720P=240
