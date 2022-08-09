@@ -96,9 +96,6 @@ media.stagefright.enable-scan=true
 media.stagefright.thumbnail.prefer_hw_codecs=true
 ro.media.recorder-max-base-layer-fps=60
 
-# Netflix
-ro.netflix.bsp_rev=Q6250-19132-1
-
 # Perf
 ro.vendor.qti.sys.fw.bservice_enable=true
 
