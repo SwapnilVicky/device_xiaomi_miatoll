@@ -56,7 +56,7 @@ dalvik.vm.dexopt.secondary=true
 # Display
 debug.sf.disable_client_composition_cache=1
 debug.sf.latch_unsignaled=1
-debug.sf.enable_hwc_vds=0
+debug.sf.enable_hwc_vds=1
 debug.performance.tuning=1
 debug.force_no_blanking=true
 ro.opengles.version=196610
@@ -87,6 +87,9 @@ persist.dpm.feature=1
 
 # FUSE passthrough
 persist.sys.fuse.passthrough.enable=true
+
+# FRP
+ro.frp.pst=/dev/block/bootdevice/by-name/frp
 
 #GBoard
 ro.com.google.ime.kb_pad_port_b=1
