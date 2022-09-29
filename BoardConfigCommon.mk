@@ -31,9 +31,6 @@ TARGET_2ND_CPU_VARIANT := cortex-a76
 # Audio
 AUDIO_FEATURE_ENABLED_PROXY_DEVICE := true
 
-# Bluetooth
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(COMMON_PATH)/bluetooth/include
-
 # Bootloader
 TARGET_NO_BOOTLOADER := true
 
