@@ -51,6 +51,8 @@ on fs
     mkdir /mnt/vendor/persist/data 0700 system system
     mkdir /mnt/vendor/persist/subsys 0770 root system
     mkdir /mnt/vendor/persist/audio 0755 system system
+    mkdir /mnt/vendor/persist/alarm 0770 system system
+    mkdir /mnt/vendor/persist/time 0770 system system
     mkdir /mnt/vendor/persist/haptics 0755 system system
     # Clean out sensor_temperature from the sensor list
     start vendor.sensors_fixup
