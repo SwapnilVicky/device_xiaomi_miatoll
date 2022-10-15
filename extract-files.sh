@@ -55,7 +55,7 @@ setup_vendor "${DEVICE_COMMON}" "${VENDOR}" "${ANDROID_ROOT}" true "${CLEAN_VEND
         ;;
 
         vendor/lib64/camera/components/com.qti.node.watermark.so)
-           "${PATCHELF}" --add-needed "libpiex_shim.so" "${2}"
+            grep -q "libpiex_shim.so" "${2}" || "${PATCHELF}" --add-needed "libpiex_shim.so" "${2}"
         ;;
 
 extract "${MY_DIR}/proprietary-files.txt" "${SRC}" \
