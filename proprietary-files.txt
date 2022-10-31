@@ -1,3 +1,5 @@
+# All unpinned blobs below are extracted from V12.5.6.0.RJWMIXM (CURTANAGlobal)
+
 # Audio-ACDB
 vendor/etc/acdbdata/adsp_avs_config.acdb
 vendor/etc/acdbdata/IDP/atoll-wcd937x-snd-card/IDP_WCD937X_Bluetooth_cal.acdb
@@ -164,6 +166,7 @@ system_ext/lib64/libaptX_encoder.so|df1c89d7af1bb35808d5fe3496b04ba066c10cbc
 vendor/etc/camera/camxoverridesettings.txt
 vendor/etc/camera/CFR_para_M_src1.bin
 vendor/etc/camera/CFR_para_M_src2.bin
+vendor/etc/camera/CFR_para_M_src3.bin
 vendor/etc/camera/CFR_para_UW_src1.bin
 vendor/etc/camera/CFR_para_UW_src2.bin
 vendor/etc/camera/CFR_para_UW_src3.bin
@@ -174,11 +177,20 @@ vendor/etc/camera/hdr_ui9_params.config
 vendor/etc/camera/LDC_FPC_TUNING_DATA.bin
 vendor/etc/camera/LDC_PACKDATA_VENDORID_0x01.bin
 vendor/etc/camera/LDC_PACKDATA_VENDORID_0x07.bin
+vendor/etc/camera/almalence_sr_params_tele.config
+vendor/etc/camera/almalence_sr_params_wide.config
+vendor/etc/camera/beauty_ui9_intelligent_params.config
+vendor/etc/camera/body_slim_ui9_params.config
 vendor/etc/camera/libsnpe_dsp_v66_domains_v2_skel.so
 vendor/etc/camera/model_back.dlc
 vendor/etc/camera/model_front.dlc
 vendor/etc/camera/sceneDetection.xml
 vendor/etc/camera/vidhance_calibration
+vendor/etc/camera/vidhance_calibration_gc8034
+vendor/etc/camera/vidhance_calibration_imx582
+vendor/etc/camera/vidhance_calibration_ov8856
+vendor/etc/camera/vidhance_calibration_s5kgm2
+vendor/etc/camera/vidhance_calibration_s5kgw1
 vendor/etc/camera/watermark_font_2300_3199.dat
 vendor/firmware/CAMERA_ICP.elf
 vendor/firmware/osc_rtp_24K_5s.bin
@@ -790,6 +802,7 @@ vendor/lib/libgcs-osal.so
 vendor/lib/libgcs.so
 vendor/lib/liblistensoundmodel2.so
 vendor/lib/libmulawdec.so
+vendor/lib/libsmwrapper.so
 
 # Media
 vendor/etc/seccomp_policy/mediacodec.policy
@@ -895,8 +908,8 @@ vendor/lib64/hw/vendor.qti.power.pasrmanager@1.0-impl.so
 vendor/lib64/vendor.qti.power.pasrmanager@1.0.so
 
 # Permissions
-system/etc/permissions/privapp-permissions-qti.xml
 product/etc/permissions/telephony_product_privapp-permissions-qti.xml
+system/etc/permissions/privapp-permissions-qti.xml
 system_ext/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml
 
 # Performance
