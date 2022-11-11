@@ -27,6 +27,9 @@ ro.media.recorder-max-base-layer-fps=60
 persist.mm.enable.prefetch=true
 vendor.mm.enable.qcom_parser=16777199
 
+# Render
+debug.cpurend.vsync=false
+
 # WFD
 persist.debug.wfd.enable=1
 vendor.sys.video.disable.ubwc=1
