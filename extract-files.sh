@@ -49,7 +49,7 @@ fi
 # Initialize the helper for common device
 setup_vendor "${DEVICE_COMMON}" "${VENDOR}" "${ANDROID_ROOT}" true "${CLEAN_VENDOR}"
         vendor/lib64/camera/components/com.qti.node.watermark.so)
-            $PATCHELF_TOOL --add-needed "libpiex_shim.so" "${2}"
+           "${PATCHELF}" --add-needed "libpiex_shim.so" "${2}"
         ;;
 
 extract "${MY_DIR}/proprietary-files.txt" "${SRC}" \
