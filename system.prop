@@ -40,6 +40,9 @@ persist.bt.a2dp.aac_disable=false
 persist.vendor.bt.aac_frm_ctl.enabled=true
 vendor.bluetooth.soc=cherokee
 
+# Camera
+ro.miui.notch=1
+
 # CNE
 persist.vendor.cne.feature=1
 
