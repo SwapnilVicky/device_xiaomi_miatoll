@@ -204,3 +204,6 @@ persist.vendor.sensors.allow_non_default_discovery=true
 
 # Wi-Fi
 wifi.aware.interface=wifi-aware0
+
+# Cached app compaction
+persist.device_config.activity_manager.use_compaction=true
