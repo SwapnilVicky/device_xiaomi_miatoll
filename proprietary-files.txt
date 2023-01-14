@@ -390,6 +390,7 @@ vendor/lib64/libcdsp_default_listener.so
 vendor/lib64/libcdsprpc.so
 
 # Charger
+bin/charger
 vendor/bin/hvdcp_opti
 vendor/etc/charger_fstab.qti
 vendor/etc/init/vendor.qti.hardware.charger_monitor@1.0-service.rc
@@ -959,9 +960,6 @@ vendor/lib64/vendor.display.color@1.1.so
 vendor/lib64/vendor.display.color@1.2.so
 vendor/lib64/vendor.display.color@1.3.so
 vendor/lib64/vendor.display.postproc@1.0.so
-
-# Power-off charging daemon - from qssi-user 11 RKQ1.200826.002 V12.0.1.0.RJWINXM release-keys
-bin/charger:bin/charger
 
 # Public libraries
 vendor/etc/public.libraries.txt
