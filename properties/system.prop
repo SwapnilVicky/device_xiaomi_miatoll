@@ -52,6 +52,7 @@ dalvik.vm.dexopt.secondary=true
 
 # Display
 debug.sf.disable_client_composition_cache=1
+debug.sf.latch_unsignaled=1
 debug.sf.enable_hwc_vds=0
 debug.performance.tuning=1
 debug.force_no_blanking=true
