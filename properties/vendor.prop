@@ -134,6 +134,7 @@ dalvik.vm.dex2oat64.enabled=true
 
 # Display
 debug.sf.hw=1
+debug.sf.predict_hwc_composition_strategy=0
 ro.surface_flinger.enable_frame_rate_override=false
 ro.surface_flinger.force_hwc_copy_for_virtual_displays=true
 ro.surface_flinger.has_wide_color_display=true
