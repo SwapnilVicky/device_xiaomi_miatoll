@@ -29,6 +29,9 @@ persist.vendor.camera.privapp.list=com.android.camera,org.lineageos.snap,org.lin
 # CNE
 persist.vendor.cne.feature=1
 
+# Data
+persist.data.df.dev_name=rmnet_usb0
+
 # Dex2oat
 pm.dexopt.first-boot=quicken
 pm.dexopt.bg-dexopt=everything
@@ -107,6 +110,7 @@ persist.log.tag.ContrastColorUtil=S
 
 # Media
 debug.stagefright.ccodec=1
+media.aac_51_output_enabled=true
 media.settings.xml=/vendor/etc/media_profiles_vendor.xml
 media.stagefright.enable-aac=true
 media.stagefright.enable-fma2dp=true
@@ -115,6 +119,7 @@ media.stagefright.enable-player=true
 media.stagefright.enable-qcp=true
 media.stagefright.enable-scan=true
 media.stagefright.thumbnail.prefer_hw_codecs=true
+mmp.enable.3g2=true
 ro.media.recorder-max-base-layer-fps=60
 
 # Perf
@@ -132,7 +137,6 @@ keyguard.no_require_sim=true
 persist.data.df.agg.dl_pkt=10
 persist.data.df.agg.dl_size=4096
 persist.radio.atfwd.start=false
-persist.data.df.dev_name=rmnet_usb0
 persist.data.df.dl_mode=5
 persist.data.df.iwlan_mux=9
 persist.data.df.mux_count=8
@@ -144,13 +148,16 @@ persist.vendor.data.mode=concurrent
 persist.vendor.radio.atfwd.start=true
 persist.vendor.radio.data_con_rprt=1
 persist.vendor.radio.mt_sms_ack=30
+persist.vendor.radio.manual_nw_rej_ct=1
 persist.vendor.radio.redir_party_num=1
 persist.vendor.radio.report_codec=1
 persist.vendor.radio.snapshot_enabled=1
 persist.vendor.radio.snapshot_timer=5
 ril.subscription.types=NV,RUIM
+rild.libpath=/vendor/lib64/libril-qc-hal-qmi.so
 telephony.lteOnCdmaDevice=1
 persist.sys.fflag.override.settings_provider_model=false
+ro.telephony.default_network=33,33
 
 # Radio Powersaving
 persist.radio.add_power_save=1
@@ -188,6 +195,9 @@ renderthread.skia.reduceopstasksplitting=true
 
 # Storage.xml moment
 persist.sys.binary_xml=false
+
+# Time services
+persist.timed.enable=true
 
 # Thermal configs path
 sys.thermal.data.path=/data/vendor/thermal/
