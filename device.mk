@@ -402,6 +402,10 @@ PRODUCT_DEX_PREOPT_BOOT_IMAGE_PROFILE_LOCATION := frameworks/base/config/boot-im
 
 # Telephony
 PRODUCT_PACKAGES += \
+    extphonelib \
+    extphonelib-product \
+    extphonelib.xml \
+    extphonelib_product.xml \
     ims-ext-common \
     ims_ext_common.xml \
     qti-telephony-hidl-wrapper \
