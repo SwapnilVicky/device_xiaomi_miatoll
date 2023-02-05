@@ -25,6 +25,11 @@ PRODUCT_ENFORCE_PRODUCT_PARTITION_INTERFACE := true
 # API
 PRODUCT_SHIPPING_API_LEVEL := 29
 
+# ANT+
+PRODUCT_PACKAGES += \
+    AntHalService-Soong \
+    com.dsi.ant@1.0.vendor
+
 # Audio
 PRODUCT_PACKAGES += \
     libvolumelistener
