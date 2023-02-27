@@ -1,3 +1,7 @@
 type hal_misys_hwservice, hwservice_manager_type;
 
 type hal_camerapostproc_xiaomi_hwservice, hwservice_manager_type;
+
+type nxpese_hwservice, hwservice_manager_type;
+
+type nxpnfc_hwservice, hwservice_manager_type;
