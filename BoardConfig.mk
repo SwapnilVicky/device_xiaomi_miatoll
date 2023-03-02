@@ -77,6 +77,9 @@ ODM_MANIFEST_NFC_FILES := $(DEVICE_PATH)/configs/vintf/manifest_nfc.xml
 TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):init_xiaomi_miatoll
 TARGET_RECOVERY_DEVICE_MODULES := init_xiaomi_miatoll
 
+# Jemalloc
+MALLOC_SVELTE := true
+
 # Kernel
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_IMAGE_NAME := Image
