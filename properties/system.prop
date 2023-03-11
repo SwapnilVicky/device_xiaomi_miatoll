@@ -77,6 +77,9 @@ debug.hwui.skia_atrace_enabled=false
 # DPM
 persist.dpm.feature=1
 
+# Ftrace
+persist.debug.ftrace_events_disable=Yes
+
 # FUSE passthrough
 persist.sys.fuse.passthrough.enable=true
 
