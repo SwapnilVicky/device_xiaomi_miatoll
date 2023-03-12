@@ -18,9 +18,30 @@ ro.config.avoid_gfx_accel=true
 
 # Bluetooth
 persist.vendor.btstack.aac_frm_ctl.enabled=true
-persist.vendor.btstack.enable.lpa=true
-persist.vendor.btstack.enable.twsplus=true
 persist.vendor.service.bdroid.soc.alwayson=true
+ro.bluetooth.library_name=libbluetooth_qti.so
+persist.service.btui.use_aptx=1
+persist.bt.enableAptXHD=true
+persist.bt.a2dp.aptx_disable=false
+persist.bt.a2dp.aptx_hd_disable=false
+persist.bluetooth.a2dp_offload.cap=sbc-aac-aptx-aptxhd-ldac
+persist.bluetooth.a2dp_offload.disabled=false
+persist.vendor.bt.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aac-ldac
+persist.vendor.btstack.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aac-ldac
+persist.vendor.btstack.enable.splita2dp=true
+persist.vendor.bt.a2dp.aac_whitelist=false
+persist.vendor.btstack.enable.twsplus=true
+persist.vendor.qcom.bluetooth.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aac-ldac-aptxadaptive
+persist.vendor.qcom.bluetooth.aac_frm_ctl.enabled=true
+persist.vendor.qcom.bluetooth.enable.splita2dp=true
+persist.vendor.qcom.bluetooth.twsp_state.enabled=false
+ro.bluetooth.emb_wp_mode=false
+ro.bluetooth.wipower=false
+ro.vendor.bluetooth.wipower=false
+persist.vendor.bt.soc.scram_freqs=192
+persist.bt.a2dp.aac_disable=false
+persist.vendor.bt.aac_frm_ctl.enabled=true
+vendor.bluetooth.soc=cherokee
 
 # Camera
 ro.miui.notch=1
