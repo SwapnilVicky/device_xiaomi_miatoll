@@ -1,0 +1,69 @@
+# Bluetooth
+bluetooth.device.class_of_device=90,2,12
+bluetooth.hardware.power.operating_voltage_mv=3700
+
+# Bluetooth profiles
+bluetooth.profile.asha.central.enabled?=true
+bluetooth.profile.a2dp.source.enabled?=true
+bluetooth.profile.avrcp.target.enabled?=true
+bluetooth.profile.bas.client.enabled?=true
+bluetooth.profile.gatt.enabled?=true
+bluetooth.profile.hfp.ag.enabled?=true
+bluetooth.profile.hid.device.enabled?=true
+bluetooth.profile.hid.host.enabled?=true
+bluetooth.profile.map.server.enabled?=true
+bluetooth.profile.opp.enabled?=true
+bluetooth.profile.pan.nap.enabled?=true
+bluetooth.profile.pan.panu.enabled?=true
+bluetooth.profile.pbap.server.enabled?=true
+bluetooth.profile.sap.server.enabled?=true
+
+# Camera
+ro.hardware.camera=xiaomi
+ro.com.google.lens.oem_camera_package=com.android.camera
+
+# Charger
+ro.charger.enable_suspend=true
+
+# Display
+debug.sdm.support_writeback=0
+debug.sf.hw=1
+debug.egl.hw=1
+debug.sf.latch_unsignaled=1
+debug.mdpcomp.logs=0
+vendor.gralloc.disable_ubwc=0
+vendor.display.disable_scaler=0
+vendor.display.disable_excl_rect=0
+vendor.display.disable_excl_rect_partial_fb=1
+vendor.display.comp_mask=0
+debug.sf.disable_client_composition_cache=1
+vendor.display.disable_rotator_ubwc=1
+vendor.display.disable_layer_stitch=0
+vendor.display.disable_hw_recovery_dump=1
+vendor.display.disable_rotator_downscale=1
+
+# LMKD
+ro.config.low_ram=false
+ro.lmk.log_stats=true
+
+# Incremental FS
+ro.incremental.enable=1
+
+# Force triple frame buffers
+ro.surface_flinger.max_frame_buffer_acquired_buffers=3
+
+# Phantom process monitoring
+sys.fflag.override.settings_enable_monitor_phantom_procs=false
+
+# Shutdown
+ro.build.shutdown_timeout=2
+
+# Telephony
+persist.vendor.ims.disableADBLogs=1
+persist.vendor.ims.disableDebugLogs=1
+persist.vendor.ims.disableIMSLogs=1
+persist.vendor.ims.disableQXDMLogs=1
+
+# Transcoding related property.
+debug.media.transcoding.codec_max_operating_rate_720P=240
+debug.media.transcoding.codec_max_operating_rate_1080P=120
