@@ -12,21 +12,26 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+# Inherit from miatoll device
 $(call inherit-product, device/xiaomi/miatoll/device.mk)
 
-# Inherit some common blissOS stuff
+# Inherit some common BlissRoms stuff
 $(call inherit-product, vendor/bliss/config/common_full_phone.mk)
+
+# Inherit from those products. Most specific first.
+$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Bootanimation Resolution
 TARGET_BOOT_ANIMATION_RES := 1080
 
 PRODUCT_NAME := bliss_miatoll
 PRODUCT_DEVICE := miatoll
-PRODUCT_BRAND := Xiaomi
+PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := SM6250
 PRODUCT_MANUFACTURER := Xiaomi
+BLISS_BUILDTYPE=OFFICIAL
 
-PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 TARGET_SUPPORTS_GOOGLE_RECORDER := true
 
-BLISS_BUILDTYPE=OFFICIAL
+PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
