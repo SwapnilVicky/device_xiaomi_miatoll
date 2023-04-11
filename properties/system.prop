@@ -127,6 +127,7 @@ persist.data.df.iwlan_mux=9
 persist.data.df.mux_count=8
 persist.data.df.ul_mode=5
 persist.data.wda.enable=true
+persist.sys.radio.force_lte_ca=true
 persist.vendor.data.iwlan.enable=true
 persist.vendor.data.mode=concurrent
 persist.vendor.radio.atfwd.start=true
