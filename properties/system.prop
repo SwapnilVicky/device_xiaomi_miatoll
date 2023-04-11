@@ -139,9 +139,19 @@ persist.vendor.radio.snapshot_enabled=1
 persist.vendor.radio.snapshot_timer=5
 ril.subscription.types=NV,RUIM
 ro.telephony.default_network=22,22
-ro.vendor.use_data_netmgrd=true
 telephony.lteOnCdmaDevice=1
 persist.sys.fflag.override.settings_provider_model=false
+
+# Radio Powersaving
+persist.radio.add_power_save=1
+pm.sleep_mode=1
+ro.ril.disable.power.collapse=0
+ro.ril.fast.dormancy.rule=1
+ro.ril.fast.dormancy.timeout=3
+ro.mot.eri.losalert.delay=100
+ro.vendor.use_data_netmgrd=true
+ro.vold.umsdirtyratio=20
+power.saving.mode=1
 
 # Ram Management
 ro.config.fha_enable=true
