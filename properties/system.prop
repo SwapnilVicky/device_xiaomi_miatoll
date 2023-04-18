@@ -68,9 +68,6 @@ persist.dpm.feature=1
 # FUSE passthrough
 persist.sys.fuse.passthrough.enable=true
 
-# FRP
-ro.frp.pst=/dev/block/bootdevice/by-name/frp
-
 # HVDCP
 persist.vendor.cp.taper_term_mv=6500
 persist.vendor.cp.fcc_main_ua=400000
