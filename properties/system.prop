@@ -87,6 +87,11 @@ ro.frp.pst=/dev/block/bootdevice/by-name/frp
 persist.vendor.cp.taper_term_mv=6500
 persist.vendor.cp.fcc_main_ua=400000
 
+# IMS
+persist.dbg.volte_avail_ovr=1
+persist.dbg.vt_avail_ovr=1
+persist.dbg.wfc_avail_ovr=1
+
 # IORap
 iorapd.perfetto.enable=false
 iorapd.readahead.enable=false
