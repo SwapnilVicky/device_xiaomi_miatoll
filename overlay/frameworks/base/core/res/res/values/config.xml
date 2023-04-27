@@ -791,4 +791,7 @@
     <!-- Enable video pause workaround when enabling/disabling the camera. -->
     <bool name="config_useVideoPauseWorkaround">true</bool>
 
+     <!-- Update battery info every second when device is charging -->
+    <bool name="config_alternateFastchargeInfoUpdate">true</bool>
+
 </resources>
