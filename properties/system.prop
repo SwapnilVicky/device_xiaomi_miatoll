@@ -53,9 +53,6 @@ ro.vendor.display.svi=1
 vendor.display.svi.config=1
 vendor.display.svi.config_path=/vendor/etc/SVIConfig.xml
 
-# Disable vsync for cpu rendered apps
-debug.cpurend.vsync=false
-
 # Disable MTE Async for system server
 arm64.memtag.process.system_server=off
 
