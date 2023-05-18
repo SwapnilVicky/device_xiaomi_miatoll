@@ -276,6 +276,11 @@
     <!-- Flag specifying whether WFC over IMS is available on device -->
     <bool name="config_device_wfc_ims_available">true</bool>
 
+    <!-- When true, indicates that the vendor's IMS implementation requires a workaround when
+     sending a request to enable or disable the camera while the video session is also
+     paused. -->
+    <bool name="config_useVideoPauseWorkaround">true</bool>
+
     <!-- The following two arrays specify which color space to use for display composition when a
          certain color mode is active.
          Composition color spaces are defined in android.view.Display.COLOR_MODE_xxx, and color
