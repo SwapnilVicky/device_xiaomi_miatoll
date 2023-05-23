@@ -120,6 +120,7 @@ BOARD_KERNEL_CMDLINE += kpti=off
 
 # Media
 TARGET_USES_ION := true
+TARGET_DISABLED_UBWC := true
 
 # OTA assert
 TARGET_OTA_ASSERT_DEVICE := curtana,excalibur,gram,joyeuse,miatoll
