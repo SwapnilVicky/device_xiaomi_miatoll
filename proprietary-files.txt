@@ -1302,7 +1302,6 @@ vendor/firmware/novatek_ts_tianma_fw.bin
 vendor/firmware/novatek_ts_tianma_mp.bin
 
 # Vibrator
-vendor/bin/vibrator_calibration
 vendor/firmware/Drv2624Date.ini
 vendor/firmware/aw8624_haptic.bin
 vendor/firmware/aw8624_rtp_1.bin
