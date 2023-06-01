@@ -8,7 +8,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit proprietary targets
-$(call inherit-product-if-exists, vendor/xiaomi/miatoll/miatoll.mk)
+$(call inherit-product, vendor/xiaomi/miatoll/miatoll-vendor.mk)
 
 # Setup dalvik vm configs
 $(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
@@ -140,7 +140,7 @@ PRODUCT_PACKAGES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.1-service.xiaomi_sm6250
+    android.hardware.biometrics.fingerprint@2.1-service.miatoll
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.fingerprint.xml
@@ -238,7 +238,7 @@ PRODUCT_COPY_FILES += \
 
 # Light
 PRODUCT_PACKAGES += \
-    android.hardware.light@2.0-service.xiaomi_sm6250
+    android.hardware.light@2.0-service.miatoll
 
 # LiveDisplay
 PRODUCT_PACKAGES += \
@@ -316,7 +316,7 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power@1.3-service.xiaomi_sm6250
+    android.hardware.power@1.3-service.miatoll
 
 # RCS
 PRODUCT_PACKAGES += \
@@ -428,7 +428,7 @@ PRODUCT_COPY_FILES += \
 
 # Vibrator
 PRODUCT_PACKAGES += \
-    vendor.qti.hardware.vibrator.service.xiaomi_sm6250
+    vendor.qti.hardware.vibrator.service.miatoll
 
 # VNDK
 PRODUCT_COPY_FILES += \

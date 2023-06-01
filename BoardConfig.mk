@@ -82,7 +82,7 @@ KERNEL_LD := LD=ld.lld
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_CONFIG := cust_defconfig
-TARGET_KERNEL_SOURCE := kernel/xiaomi/sm6250
+TARGET_KERNEL_SOURCE := kernel/xiaomi/miatoll
 
 BOARD_KERNEL_CMDLINE += androidboot.console=ttyMSM0
 BOARD_KERNEL_CMDLINE += androidboot.hardware=qcom
@@ -108,8 +108,8 @@ ODM_MANIFEST_SKUS += \
 ODM_MANIFEST_JOYEUSE_FILES := $(DEVICE_PATH)/manifest_joyeuse.xml
 
 # Init
-TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):init_xiaomi_miatoll
-TARGET_RECOVERY_DEVICE_MODULES := init_xiaomi_miatoll
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_miatoll
+TARGET_RECOVERY_DEVICE_MODULES := libinit_miatoll
 
 # Media
 TARGET_USES_ION := true
@@ -232,4 +232,4 @@ WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # Inherit proprietary blobs
--include vendor/xiaomi/miatoll/BoardConfigVendor.mk
+include vendor/xiaomi/miatoll/BoardConfigVendor.mk

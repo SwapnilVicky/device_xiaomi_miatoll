@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-#define LOG_TAG "android.hardware.light@2.0-service.xiaomi_sm6250"
+#define LOG_TAG "android.hardware.light@2.0-service.miatoll"
 
 #include <log/log.h>
 
