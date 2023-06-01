@@ -199,8 +199,5 @@ persist.vendor.sensors.odl.adsp=true
 persist.vendor.sensors.support_direct_channel=false
 persist.vendor.sensors.allow_non_default_discovery=true
 
-# WFD
-persist.sys.wfd.virtual=0
-
 # Wi-Fi
 wifi.aware.interface=wifi-aware0
