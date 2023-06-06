@@ -1,64 +1,70 @@
 # All unpinned blobs below are extracted from V12.5.6.0.RJWMIXM (CURTANAGlobal)
 
-# ACDB
-vendor/etc/acdbdata/IDP/atoll-wcd937x-snd-card/IDP_WCD937X_Bluetooth_cal.acdb
-vendor/etc/acdbdata/IDP/atoll-wcd937x-snd-card/IDP_WCD937X_General_cal.acdb
-vendor/etc/acdbdata/IDP/atoll-wcd937x-snd-card/IDP_WCD937X_Global_cal.acdb
-vendor/etc/acdbdata/IDP/atoll-wcd937x-snd-card/IDP_WCD937X_Handset_cal.acdb
-vendor/etc/acdbdata/IDP/atoll-wcd937x-snd-card/IDP_WCD937X_Hdmi_cal.acdb
-vendor/etc/acdbdata/IDP/atoll-wcd937x-snd-card/IDP_WCD937X_Headset_cal.acdb
-vendor/etc/acdbdata/IDP/atoll-wcd937x-snd-card/IDP_WCD937X_Speaker_cal.acdb
-vendor/etc/acdbdata/IDP/atoll-wcd937x-snd-card/IDP_WCD937X_workspaceFile.qwsp
-vendor/etc/acdbdata/IDP/IDP_Bluetooth_cal.acdb
-vendor/etc/acdbdata/IDP/IDP_General_cal.acdb
-vendor/etc/acdbdata/IDP/IDP_Global_cal.acdb
-vendor/etc/acdbdata/IDP/IDP_Handset_cal.acdb
-vendor/etc/acdbdata/IDP/IDP_Hdmi_cal.acdb
-vendor/etc/acdbdata/IDP/IDP_Headset_cal.acdb
-vendor/etc/acdbdata/IDP/IDP_Speaker_cal.acdb
-vendor/etc/acdbdata/IDP/IDP_workspaceFile.qwsp
-vendor/etc/acdbdata/adsp_avs_config.acdb
+# Audio ACDB - from qssi-user-11-RKQ1.200826.002-V12.0.5.0.RJWINXM-release-keys
+vendor/etc/acdbdata/adsp_avs_config.acdb|c84e803f04af9b2d4cd7aade1e8e7a55cfecabc3
+vendor/etc/acdbdata/IDP/atoll-wcd937x-snd-card/IDP_WCD937X_Bluetooth_cal.acdb|e6bb3923414ff1070d8fd9dbd4d0a28f5a8cd87a
+vendor/etc/acdbdata/IDP/atoll-wcd937x-snd-card/IDP_WCD937X_General_cal.acdb|ae47ae278100e7a447e267a44eb65124e3597fbf
+vendor/etc/acdbdata/IDP/atoll-wcd937x-snd-card/IDP_WCD937X_Global_cal.acdb|1392803179e6f0eba46496cdd7d0b81489739b37
+vendor/etc/acdbdata/IDP/atoll-wcd937x-snd-card/IDP_WCD937X_Handset_cal.acdb|d01cde449e2df297a7e5db06378721591e392cfe
+vendor/etc/acdbdata/IDP/atoll-wcd937x-snd-card/IDP_WCD937X_Hdmi_cal.acdb|334532d87a3c086ad1c09081eca2f5c18a3f33b0
+vendor/etc/acdbdata/IDP/atoll-wcd937x-snd-card/IDP_WCD937X_Headset_cal.acdb|650b59df429bc2851941b5108c54039e044f35d4
+vendor/etc/acdbdata/IDP/atoll-wcd937x-snd-card/IDP_WCD937X_Speaker_cal.acdb|0c2a7c6a3b4a48a7abf1799f60e87d510e949a82
+vendor/etc/acdbdata/IDP/atoll-wcd937x-snd-card/IDP_WCD937X_workspaceFile.qwsp|0640bc26d7665099ba7d9cdb437b09a3cdba1f65
+vendor/etc/acdbdata/IDP/IDP_Bluetooth_cal.acdb|685e2e2dd6f7ea768d9d4799a799c26073c6235d
+vendor/etc/acdbdata/IDP/IDP_General_cal.acdb|37e7fe43c79a81c60fd00dd37b57c55d9447d720
+vendor/etc/acdbdata/IDP/IDP_Global_cal.acdb|dab9a00abe03f704a1d6fb521df772c4cc3b0193
+vendor/etc/acdbdata/IDP/IDP_Handset_cal.acdb|225d9f1d777cf8e45781079cc762bdfd5e473f81
+vendor/etc/acdbdata/IDP/IDP_Hdmi_cal.acdb|7338ee9f3a8b31e957ec81e8fdf0a2dbaeeadfba
+vendor/etc/acdbdata/IDP/IDP_Headset_cal.acdb|febddd06ccb734115c3d79d40993ac0f1640361a
+vendor/etc/acdbdata/IDP/IDP_Speaker_cal.acdb|8a80a6a890a372214739fedd20149b617ce7966c
+vendor/etc/acdbdata/IDP/IDP_workspaceFile.qwsp|746f937fb06994665f47ee748de57f410da58b25
 
-# ACDB loader
-vendor/lib/libacdb-fts.so
-vendor/lib/libacdbloader.so
-vendor/lib/libacdbrtac.so
-vendor/lib/libadiertac.so
-vendor/lib/libaudcal.so
+# ADSP - from qssi-user-11-RKQ1.200826.002-V12.0.5.0.RJWINXM-release-keys
+vendor/etc/init/vendor.qti.adsprpc-service.rc|54588df8e7da58c66838028d2284986b966c2d37
+vendor/bin/adsprpcd|c1b9fe936ffbcd5a875baa785f4b9629366083ec
+vendor/lib/libadsprpc.so|437f6ab24e5a08de250529bf0adf5ecaed88817d
+vendor/lib/libadsp_default_listener.so|92ca2faf693eb488394440b94b6deb73fe9504e2
+vendor/lib/libfastcvdsp_stub.so|571929bad29dff06a41a2a6cfb4ef54711957f6c
+vendor/lib/libfastcvopt.so|b6337c736cc80bce3c1db40949ae4b9ad8b9206e
+vendor/lib/libmdsprpc.so|f9cabbd95f91e9fa90e21c48349adbdd825a05ff
+vendor/lib/libsdsprpc.so|091682459f41566a3909da301a06be2008efb493
+vendor/lib64/libadsprpc.so|5e677d9e7ecc56d8c9bf7bcc49f1e717b5669aad
+vendor/lib64/libadsp_default_listener.so|84ffb0536efd42fb0ebc67c194f88da3da6ca9de
+vendor/lib64/libfastcvdsp_stub.so|4eaf9f6db96648f1b1a423fb86c0fcce8a220499
+vendor/lib64/libfastcvopt.so|b4a28cc952eed09b9c71717782019cbc3c1befd3
+vendor/lib64/libmdsprpc.so|523f6501e39101a9d61baffccd20a0d2848e3524
+vendor/lib64/libsdsprpc.so|96ed968d5d79c3fe8c37f331082c16cf5212dc52
 
-# ADSP
-vendor/bin/adsprpcd
-vendor/etc/init/vendor.qti.adsprpc-service.rc
-vendor/lib64/libadsp_default_listener.so
-vendor/lib64/libadsprpc.so
-
-# ADSP Modules
-vendor/lib/rfsa/adsp/capi_v2_aptX_CLHDADV_Encoder.so
-vendor/lib/rfsa/adsp/capi_v2_aptX_CLHDAD_Speech_Decoder.so
-vendor/lib/rfsa/adsp/capi_v2_aptX_Classic.so
-vendor/lib/rfsa/adsp/capi_v2_aptX_HD.so
-vendor/lib/rfsa/adsp/libSuperSensor_skel.so
-vendor/lib/rfsa/adsp/libVC1Dec.so
-vendor/lib/rfsa/adsp/libVC1DecDsp_skel.so
-vendor/lib/rfsa/adsp/libVDHexagonSuperPhoto_skel.so
-vendor/lib/rfsa/adsp/libapps_mem_heap.so
-vendor/lib/rfsa/adsp/libarcsoft_dualcam_refocus_skel.so
-vendor/lib/rfsa/adsp/libcamera_nn_skel.so
-vendor/lib/rfsa/adsp/libcvpdsp_skel.so
-vendor/lib/rfsa/adsp/libdspCV_skel.so
-vendor/lib/rfsa/adsp/libdsp_streamer_add_constant.so
-vendor/lib/rfsa/adsp/libdsp_streamer_binning.so
-vendor/lib/rfsa/adsp/libdsp_streamer_skel.so
-vendor/lib/rfsa/adsp/libfastcvadsp.so
-vendor/lib/rfsa/adsp/libfastcvdsp_skel.so
-vendor/lib/rfsa/adsp/libhexagon_nn_skel.so
-vendor/lib/rfsa/adsp/libmialgo_rfs_cdsp_skel.so
-vendor/lib/rfsa/adsp/libscveObjectSegmentation_skel.so
-vendor/lib/rfsa/adsp/libscveT2T_skel.so
-vendor/lib/rfsa/adsp/libsns_device_mode_skel.so
-vendor/lib/rfsa/adsp/libsns_low_lat_stream_skel.so
-vendor/lib/rfsa/adsp/misound_res.bin
-vendor/lib/rfsa/adsp/tas25xx_TI_0.bin
+# ADSP Modules - from qssi-user-11-RKQ1.200826.002-V12.0.5.0.RJWINXM-release-keys
+vendor/lib/rfsa/adsp/capi_v2_aptX_Classic.so|59cbdf5d84ba2ff64014941f3ad9e6c2c35e2c06
+vendor/lib/rfsa/adsp/capi_v2_aptX_CLHDADV_Encoder.so|7182a5728055dfdee15cd9518c1fdd576d813133
+vendor/lib/rfsa/adsp/capi_v2_aptX_CLHDAD_Speech_Decoder.so|67e36bfe46b82bc3e0603bf58d638293fcadd4aa
+vendor/lib/rfsa/adsp/capi_v2_aptX_HD.so|e25f1087edc95d2ff76c1e37787ca37aae2cf175
+vendor/lib/rfsa/adsp/libapps_mem_heap.so|738014e904331e99749f36c8f6c0c43b8c246fe6
+vendor/lib/rfsa/adsp/libarcsoft_dualcam_refocus_skel.so|f624829796c1190b0156873d2620a62ea946e383
+vendor/lib/rfsa/adsp/libcamera_nn_skel.so|e4a35174a93264b38fe210a3f99e5fb7be8dc39e
+vendor/lib/rfsa/adsp/libcvpdsp_skel.so|58cbb97212073cf7e4780c6d77a7628c3ee845bd
+vendor/lib/rfsa/adsp/libdspCV_skel.so|7d210350a0cede8ea77a996d02f7b6fc3eac65bb
+vendor/lib/rfsa/adsp/libdsp_streamer_add_constant.so|481cdec174e77e5cb555d715057170568892a18f
+vendor/lib/rfsa/adsp/libdsp_streamer_binning.so|00eb6acc7c864371b932f95ff98e98351c6508d8
+vendor/lib/rfsa/adsp/libdsp_streamer_skel.so|aee67209556f075cabdb55ddc70d7a76ffc74b3b
+vendor/lib/rfsa/adsp/libfastcvadsp.so|f6292d45d5480c521c648b608d28f707ce2a9bea
+vendor/lib/rfsa/adsp/libfastcvdsp_skel.so|03202cfe8cf561babbc65d516d4a79d6054214ee
+vendor/lib/rfsa/adsp/libhexagon_nn_skel.so|55d2c71535acdcbbdd7b0a3fe475249c8d99eb08
+vendor/lib/rfsa/adsp/libmialgo_rfs_cdsp_skel.so|70b13b462577b85a40e1a089d44a5c84830df1fe
+vendor/lib/rfsa/adsp/libscveObjectSegmentation_skel.so|d95fa1d4e6a7f60a43465256963636cb14d8a267
+vendor/lib/rfsa/adsp/libscveT2T_skel.so|898558b00e6454fc969e893df1d329fc9e02070d
+vendor/lib/rfsa/adsp/libsns_device_mode_skel.so|733a5b8861bb6eb1285bb8982992531c94800997
+vendor/lib/rfsa/adsp/libsns_low_lat_stream_skel.so|c30bb30eecf968e02f72c055d3cc13a7f769644f
+vendor/lib/rfsa/adsp/libSuperSensor_skel.so|3cf36d5dac2ad627a91a58f2ef1f4a13e687c459
+vendor/lib/rfsa/adsp/libVC1Dec.so|732ede3ede9e6e1b09c439156f62a07d8fa0ee3e
+vendor/lib/rfsa/adsp/libVC1DecDsp_skel.so|eff059c5a29a44d205bd60ad24aecc46416e939e
+vendor/lib/rfsa/adsp/libVDHexagonSuperPhoto_skel.so|27e5f69b0bf2c3433fc62a121a78d7a5d3e2d7b3
+vendor/lib/rfsa/adsp/misound_res.bin|cabab999b2a7f9b79f48a4405004480f60cbb049
+vendor/lib/rfsa/adsp/tas25xx_TI_0.bin|6fbbc916fd4d31321199fc01aaff3d8e720f6197
+vendor/lib64/rfsa/adsp/libsns_low_lat_stream_skel.so|c30bb30eecf968e02f72c055d3cc13a7f769644f
+vendor/lib64/rfsa/adsp/libsns_device_mode_skel.so|733a5b8861bb6eb1285bb8982992531c94800997
+vendor/lib64/rfsa/adsp/libsns_low_lat_stream_skel.so|c30bb30eecf968e02f72c055d3cc13a7f769644f
 
 # Alarm
 product/app/PowerOffAlarm/PowerOffAlarm.apk
@@ -68,26 +74,93 @@ vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc
 vendor/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so
 vendor/lib64/vendor.qti.hardware.alarm@1.0.so
 
-# Audio
-vendor/lib/btaudio_offload_if.so
-vendor/lib/hw/audio.primary.atoll.so
-vendor/lib/hw/vendor.qti.hardware.audiohalext@1.0-impl.so
-vendor/lib/liba2dpoffload.so
-vendor/lib/libadm.so
-vendor/lib/libaudioconfigstore.so
-vendor/lib/libaudio_log_utils.so
-vendor/lib/libaudioparsers.so
-vendor/lib/libdrc.so
-vendor/lib/libhdmipassthru.so
-vendor/lib/libqtigef.so
-vendor/lib/libssrec.so
-vendor/lib/libsurround_3mic_proc.so
-vendor/lib/vendor.qti.hardware.audiohalext@1.0.so
+# Audio - from qssi-user-11-RKQ1.200826.002-V12.0.5.0.RJWINXM-release-keys
+vendor/bin/audioflacapp|68ecf41ef40bbc90a35ff4d166b2a61461238562
+vendor/lib/btaudio_offload_if.so|2573a358b1ab6ab104c927fdf6c6230f0af6465d
+vendor/lib/hw/sound_trigger.primary.atoll.so|7d0248d95f17bdf56a81c1048177b2ce7d9e605a
+vendor/lib/libacdb-fts.so|fd809b3ea76ddb2fb91b56435e1cd9fe99919bfe
+vendor/lib/libacdbloader.so|44215dad276b317bc497d1dc4ff34ca9777acca3
+vendor/lib/libacdbrtac.so|755a7a77b74c403049b910ed62547ffd02e5e429
+vendor/lib/libadiertac.so|b0af03b40901e62806edd8f11eaef8b1bfee11d0
+vendor/lib/libadm.so|c5d8693dbec640d3366ad7620833b2e4387f3c01
+vendor/lib/libaudcal.so|dbea7eef45954bc9ce3acd2c40815a692d0c54b0
+vendor/lib/libaudioalsa.so|448ebf789e999363f848f8a42c5f87673145d635
+vendor/lib/libaudioconfigstore.so|a00b695d8ec2666bdce729e0f947149c3b78b2b5
+vendor/lib/libaudioparsers.so|b786d5a2a8f94edb11b5334bbe981dbd2633325f
+vendor/lib/libaudio_log_utils.so|71ec4d31ad6c9e9a4bee8db7b5ab55b70ef7c4c3
+vendor/lib/libdrc.so|e27974e53efe0456cba96f6910ad977c6351d0b7
+vendor/lib/libqtigef.so|85fe1ab14623ff64d86feadebff429b1938f278a
+vendor/lib/libsurround_3mic_proc.so|1d425b4b0d89f68e0f0112e8f2f73b1cd5b6dea2
+vendor/lib/libtinycompress.so|688038413c477fbc4f5cc34e8fafb103dff0f973
+vendor/lib/liba2dpoffload.so|7c8799bd3bb80a282cae74e5f36b50fb4935ed08
+vendor/lib/libbatterylistener.so|482358957f82c481eb99d02ca0c087124cd0ef4f
+vendor/lib/libcirrusspkrprot.so|14565dcaf607a4819bb6fb2e4118029ec20f4903
+vendor/lib/libcomprcapture.so|11c7feb8ce2dd2c95ceca97c8292ca4bda3b4b8f
+vendor/lib/libexthwplugin.so|b97f01a9e85efa97077a6b923818be2262f99399
+vendor/lib/libhdmiedid.so|d581aec552fdef87e8c12c8e4f5a3273eda7cdb9
+vendor/lib/libhfp.so|1995c38e798b2931dfcab9ca29ce87d255e49cde
+vendor/lib/libsndmonitor.so|99b5a6d5555da7260638b6fb48745e29787a771e
+vendor/lib/libspkrprot.so|4628e8d8dc58c42ad23c3ef79e73c311b70dd124
+vendor/lib64/btaudio_offload_if.so|3d8a076e375a2af735745f283749da02ebba4320
+vendor/lib64/libacdb-fts.so|f11a2382e678b2b2574cc6ecec7b1a6410f66d19
+vendor/lib64/libacdbloader.so|7efd98002603db8168b0b8cd449421c4c87ad03f
+vendor/lib64/libacdbrtac.so|e8081eb0e83a70eda98aec20a86fb8d810c540cd
+vendor/lib64/libadiertac.so|d390a6081a86fe2c13ebab2164ee237880ec9cb0
+vendor/lib64/libaudcal.so|4974d8b01a9892326a82ea3e68726620c6ca0cc7
+vendor/lib64/libaudioalsa.so|d9316323d6d93b46c1f429cc0d4ef2271e04fd55
+vendor/lib64/libaudioconfigstore.so|3a34f90b540655ad3dc212f5228fd1d0db248a34
+vendor/lib64/libaudioparsers.so|326954ecd50e2b0a25ff0f076def93271a9bd554
+vendor/lib64/libaudio_log_utils.so|6091c30d5724adb31a3b4c71379cc004c235905a
+vendor/lib64/libqtigef.so|4a3ee1e9333122af9f1ed3027204ab78f1d6a68e
+vendor/lib64/libtinycompress.so|3c8e6dece8dc8de9cce47f58474ee3486f36f33a
+vendor/lib64/liba2dpoffload.so|7ffcefb0b7fa5e8c86d46c0a27f2296b038e0559
+vendor/lib64/libbatterylistener.so|c3a38a4ade2c2ffaac90d9f7b2e6c9f123f1cfb5
+vendor/lib64/libcirrusspkrprot.so|c0b722859fc351c4a6deaf65808d9102e662db11
+vendor/lib64/libcomprcapture.so|d6200ce55dbb8827776bb1b51b1558cb837cde4f
+vendor/lib64/libhdmipassthru.so|cd14a382756070bc70e51dc92bab24a6bb35e942
+vendor/lib64/libexthwplugin.so|98f03c867adf2f15438609e385a41d88f395c6d1
+vendor/lib64/libhfp.so|43254a707ee582c6e27895ff5cd66ecf949a4406
+vendor/lib64/libsndmonitor.so|42cb5c76d7901ebd79d1b4b9b376fda53f5e3eec
+vendor/lib64/libspkrprot.so|6bda5d75d87f1e23dcd0cf94848fd8b7cbd5cdbb
+vendor/lib/libhdmiedid.so|d581aec552fdef87e8c12c8e4f5a3273eda7cdb9
+vendor/lib/libhdmipassthru.so|964f873474fac0a50c02046964c62dde5138d60c
 
-# Audio FX modules
-vendor/lib/soundfx/libasphere.so
-vendor/lib/soundfx/libmisoundfx.so
-vendor/lib/soundfx/libshoebox.so
+# Audio Sphere - from qssi-user-11-RKQ1.200826.002-V12.0.5.0.RJWINXM-release-keys
+system_ext/etc/permissions/audiosphere.xml|015ad7be4921039238bfa3d34d052d752453e49c
+-system_ext/framework/audiosphere.jar|db76dab5f44013265df54ae41073184d9a0423e9
+vendor/lib/soundfx/libasphere.so|44cd20e13920888b29d3b2e4bb0b2559a746bf8f
+vendor/lib64/soundfx/libasphere.so|7d01becf38d808b232aef88025e4dd69839b788f
+
+# Audio Sound FX - from qssi-user-11-RKQ1.200826.002-V12.0.5.0.RJWINXM-release-keys
+vendor/lib/soundfx/libaudiopreprocessing.so|ac96193e83f7ce8fdbe98eacccd51cc1c3e05147
+vendor/lib/soundfx/libmisoundfx.so|151bf9a8e36b95d2d5ad4c502b4cfcebdcb56d22
+vendor/lib/soundfx/libqcbassboost.so|25d959a625f6a52a9e2e435b9648c5acf893404b
+vendor/lib/soundfx/libqcreverb.so|1d06bb1659c0f0be7cb34496a0f9fd79b0081cd2
+vendor/lib/soundfx/libqcvirt.so|34b37c1752c72b71bf4089a3788591c7a53e348a
+vendor/lib/soundfx/libshoebox.so|8c25f9bd479540f1b43c6827020376a40a667270
+vendor/lib/soundfx/libqcompostprocbundle.so|77489ee275019c416577feeca37de1b522c4e80c
+vendor/lib/soundfx/libqcomvisualizer.so|ffdf43e1c16b6fdb506a0a78366f8860739d940b
+vendor/lib/soundfx/libqcomvoiceprocessing.so|bc10238e7701f9c50b52190e37a6f28ac9f0a1f6
+vendor/lib64/soundfx/libaudiopreprocessing.so|e613f3296fca22dab02c1eeb3960fc9c4fe469c1
+vendor/lib64/soundfx/libqcbassboost.so|8ed7764ee1e02e5cdcc35148e04fd78614193b37
+vendor/lib64/soundfx/libqcreverb.so|71063b498f98c9029e5b39e1c7dda23341357735
+vendor/lib64/soundfx/libqcvirt.so|cc5f52e89ca670db472ae9d0fb8012a20020324e
+vendor/lib64/soundfx/libshoebox.so|81b3312b54e147c8b5375c712a004661fb78e8bf
+vendor/lib64/soundfx/libqcompostprocbundle.so|df2f06951f34cc6d9ee54bf95ed14330690ce6d4
+vendor/lib64/soundfx/libqcomvisualizer.so|ba95be313ad476c50de712d0bf46f5b23c348477
+vendor/lib64/soundfx/libqcomvoiceprocessing.so|0a345093deba35b15365728398dbd80ef206d2a1
+
+# Audio HAL Ext - from qssi-user-11-RKQ1.200826.002-V12.0.5.0.RJWINXM-release-keys
+system_ext/lib/vendor.qti.hardware.audiohalext@1.0.so|59a3c89fc283664c63d72685421cb12da8cabbb8
+system_ext/lib64/vendor.qti.hardware.audiohalext@1.0.so|74ceb53e753f816cf05a25dce69d93c67eb471fe
+vendor/lib/hw/vendor.qti.hardware.audiohalext@1.0-impl.so|78c3d718fa0d7b15bb7a61adeb737e39e2b793e0
+vendor/lib/vendor.qti.hardware.audiohalext@1.0.so|188bfa1f6971a76651e585805698390638e35b4b
+vendor/lib64/hw/vendor.qti.hardware.audiohalext@1.0-impl.so|fcc2380cf4a57bcc6e7a30ed2545fb720d135c6a
+vendor/lib64/vendor.qti.hardware.audiohalext@1.0.so|9a79f351d4dbe9847b9054ff91782215c053d391
+
+# Audio HAL - from qssi-user-11-RKQ1.200826.002-V12.0.5.0.RJWINXM-release-keys
+vendor/lib/hw/audio.primary.atoll.so|122624a337d9dc96c339267111402022ad91808a
+vendor/lib64/hw/audio.primary.atoll.so|6ec35d3ac9b326eaeb20b3ac7153226c4f7bbc1b
 
 # Battery
 vendor/bin/batterysecret
