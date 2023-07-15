@@ -18,6 +18,11 @@ $(call inherit-product, device/xiaomi/sm6250-common/common.mk)
 # Inherit proprietary targets
 $(call inherit-product-if-exists, vendor/xiaomi/miatoll/miatoll-vendor.mk)
 
+# APN
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/etc/apns-conf-product.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/apns-conf.xml \
+    $(LOCAL_PATH)/configs/etc/apns-conf-system.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/apns-conf.xml
+
 # Init scripts
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/init.device.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.device.rc
