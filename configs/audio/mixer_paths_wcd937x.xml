@@ -116,6 +116,7 @@
     <ctl name="WSA_CDC_DMA_RX_0 Audio Mixer MultiMedia13" value="0" />
     <ctl name="WSA_CDC_DMA_RX_0 Audio Mixer MultiMedia14" value="0" />
     <ctl name="WSA_CDC_DMA_RX_0 Audio Mixer MultiMedia15" value="0" />
+    <!-- TAS25XX_ENABLED start -->
     <ctl name="TERT_MI2S_RX Audio Mixer MultiMedia1" value="0" />
     <ctl name="TERT_MI2S_RX Audio Mixer MultiMedia2" value="0" />
     <ctl name="TERT_MI2S_RX Audio Mixer MultiMedia3" value="0" />
@@ -130,6 +131,7 @@
     <ctl name="TERT_MI2S_RX Audio Mixer MultiMedia14" value="0" />
     <ctl name="TERT_MI2S_RX Audio Mixer MultiMedia15" value="0" />
     <ctl name="TERT_MI2S_RX Audio Mixer MultiMedia16" value="0" />
+    <!-- TAS25XX_ENABLED end -->
     <ctl name="RX_CDC_DMA_RX_0 Audio Mixer MultiMedia16" value="0" />
     <ctl name="RX_CDC_DMA_RX_0 Audio Mixer MultiMedia1" value="0" />
     <ctl name="RX_CDC_DMA_RX_0 Audio Mixer MultiMedia2" value="0" />
@@ -166,7 +168,6 @@
     <ctl name="MultiMedia10 Mixer USB_AUDIO_TX" value="0" />
     <ctl name="MultiMedia17 Mixer USB_AUDIO_TX" value="0" />
     <ctl name="TX_CDC_DMA_TX_3 Channels" value="One" />
-    <ctl name="TERT_MI2S_TX Channels" value="One" />
     <ctl name="TERT_MI2S_RX Channels" value="One" />
     <ctl name="RX_CDC_DMA_RX_0 Channels" value="One" />
     <ctl name="VI_FEED_TX Channels" value="Two" />
@@ -176,6 +177,15 @@
     <ctl name="WSA_CDC_DMA_TX_0 Format" value="UNPACKED" />
     <ctl name="RX_CDC_DMA_RX_0 Format" value="UNPACKED" />
     <ctl name="TX_CDC_DMA_TX_3 Format" value="UNPACKED" />
+    <!-- 24bit support start -->
+    <ctl name="TERT_MI2S_RX Channels" value="Two" />
+    <ctl name="TERT_MI2S_RX Format" value="S24_LE" />
+    <ctl name="TERT_MI2S_RX SampleRate" value="KHZ_48" />
+    <ctl name="TERT_MI2S_TX Channels" value="Two" />
+    <ctl name="TERT_MI2S_TX Format" value="S24_LE" />
+    <ctl name="TERT_MI2S_TX SampleRate" value="KHZ_48" />
+    <!-- 24bit support end -->
+    <ctl name="TX_CDC_DMA_TX_4 SampleRate" value="KHZ_48" />
     <!-- HFP start -->
     <ctl name="HFP_SLIM7_UL_HL Switch" value="0" />
     <ctl name="TERT_MI2S_RX Port Mixer SLIM_7_TX" value="0" />
@@ -210,6 +220,17 @@
     <ctl name="MultiMedia2 Mixer SLIM_8_TX" value="0" />
     <!-- fm end -->
 
+    <!-- ultrasound related -->
+    <ctl name="Ultrasound Enable" value="Off" />
+    <ctl name="Ultrasound RampDown" value="Off"/>
+    <ctl name="Ultrasound Event" value="0"/>
+    <ctl name="Ultrasound Mode" value="0"/>
+    <ctl name="Ultrasound Rx Port" value="Off"/>
+    <ctl name="Ultrasound Microphone Index" value="0"/>
+    <ctl name="Ultrasound Debug Mode" value="0" />
+    <ctl name="Ultrasound Suspend" value="0"/>
+    <ctl name="Ultrasound Custom Setting 1" value="0" />
+
     <!-- Multimode Voice1 -->
     <ctl name="TERT_MI2S_RX_Voice Mixer VoiceMMode1" value="0" />
     <ctl name="RX_CDC_DMA_RX_0_Voice Mixer VoiceMMode1" value="0" />
@@ -235,6 +256,9 @@
     <ctl name="RX_CDC_DMA_RX_0_Voice Mixer VoiceMMode2" value="0" />
     <ctl name="VoiceMMode2_Tx Mixer TX_CDC_DMA_TX_3_MMode2" value="0" />
     <ctl name="VoiceMMode2_Tx Mixer TX_CDC_DMA_TX_4_MMode2" value="0" />
+
+    <ctl name="VoiceMMode1_Tx Mixer TX_CDC_DMA_TX_3_MMode2" value="0" />
+    <ctl name="VoiceMMode1_Tx Mixer TX_CDC_DMA_TX_4_MMode2" value="0" />
     <!-- Multimode Voice2 BTSCO -->
     <ctl name="SLIM_7_RX_Voice Mixer VoiceMMode2" value="0" />
     <ctl name="VoiceMMode2_Tx Mixer SLIM_7_TX_MMode2" value="0" />
@@ -260,15 +284,23 @@
     <!-- RT Proxy Cal end -->
 
     <!-- Incall Recording -->
-    <ctl name="MultiMedia9 Mixer VOC_REC_UL" value="0" />
-    <ctl name="MultiMedia9 Mixer VOC_REC_DL" value="0" />
+    <ctl name="MultiMedia1 Mixer VOC_REC_UL" value="0" />
+    <ctl name="MultiMedia1 Mixer VOC_REC_DL" value="0" />
     <ctl name="MultiMedia8 Mixer VOC_REC_UL" value="0" />
     <ctl name="MultiMedia8 Mixer VOC_REC_DL" value="0" />
+    <ctl name="MultiMedia9 Mixer VOC_REC_UL" value="0" />
+    <ctl name="MultiMedia9 Mixer VOC_REC_DL" value="0" />
     <!-- Incall Recording End -->
 
     <!-- Incall Music -->
     <ctl name="Incall_Music Audio Mixer MultiMedia2" value="0" />
     <ctl name="Incall_Music Audio Mixer MultiMedia9" value="0" />
+    <!-- Add by wzg for MIUI sos function 20191127 start -->
+    <ctl name="Incall_Music Audio Mixer MultiMedia1" value="0" />
+    <ctl name="Incall_Music_2 Audio Mixer MultiMedia9" value="0" />
+    <ctl name="Incall_Music_2 Audio Mixer MultiMedia2" value="0" />
+    <ctl name="Incall_Music_2 Audio Mixer MultiMedia1" value="0" />
+    <!-- Add by wzg for MIUI sos function 20191127 end -->
     <!-- Incall Music End -->
 
     <!-- compress-voip-call start -->
@@ -355,9 +387,9 @@
     <!-- TX Controls -->
     <ctl name="TX_CDC_DMA_TX_3 Channels" value="One" />
     <ctl name="MultiMedia1 Mixer TX_CDC_DMA_TX_3" value="0" />
-    <ctl name="ADC1_MIXER Switch" value="0" />
-    <ctl name="ADC2_MIXER Switch" value="0" />
-    <ctl name="ADC2 MUX" value="ZERO" />
+    <ctl name="ADC2_MIXER Switch" value="1" />
+    <ctl name="ADC1_MIXER Switch" value="1" />
+    <ctl name="ADC2 MUX" value="INP3" />
     <ctl name="DEC0_BCS Switch" value="0" />
     <ctl name="TX_AIF1_CAP Mixer DEC0" value="0" />
     <ctl name="TX_AIF1_CAP Mixer DEC1" value="0" />
@@ -402,10 +434,10 @@
     <ctl name="HPHR Volume" value="20" />
     <ctl name="EAR SPKR PA Gain" value="G_DEFAULT" />
 
-    <ctl name="TX_DEC0 Volume" value="90" />
-    <ctl name="TX_DEC1 Volume" value="90" />
-    <ctl name="TX_DEC2 Volume" value="90" />
-    <ctl name="TX_DEC3 Volume" value="90" />
+    <ctl name="TX_DEC0 Volume" value="94" />
+    <ctl name="TX_DEC1 Volume" value="94" />
+    <ctl name="TX_DEC2 Volume" value="94" />
+    <ctl name="TX_DEC3 Volume" value="94" />
     <ctl name="TX_DEC4 Volume" value="84" />
     <ctl name="TX_DEC5 Volume" value="84" />
     <ctl name="TX_DEC6 Volume" value="84" />
@@ -478,6 +510,8 @@
     <ctl name="MultiMedia16 Mixer SLIM_8_TX" value="0" />
     <ctl name="MultiMedia16 Mixer USB_AUDIO_TX" value="0" />
 
+    <!-- For TI-SmartPA -->
+    <ctl name="TERT_MI2S_TX Channels" value="One" />
     <!-- These are audio route (FE to BE) specific mixer settings -->
     <path name="gsm-mode">
         <ctl name="GSM mode Enable" value="ON" />
@@ -1062,7 +1096,6 @@
     <path name="compress-offload-playback2 handset">
         <ctl name="RX_CDC_DMA_RX_0 Audio Mixer MultiMedia7" value="1" />
     </path>
-
     <path name="compress-offload-playback2 display-port">
         <ctl name="DISPLAY_PORT Mixer MultiMedia7" value="1" />
     </path>
@@ -1131,7 +1164,6 @@
 
     <path name="compress-offload-playback2 headphones-44.1">
         <ctl name="RX_CDC_DMA_RX_0 Audio Mixer MultiMedia7" value="1" />
-
     </path>
 
     <path name="compress-offload-playback2 headphones-dsd">
@@ -1666,7 +1698,6 @@
         <path name="compress-offload-playback6" />
     </path>
 
-
     <path name="compress-offload-playback7">
         <ctl name="TERT_MI2S_RX Audio Mixer MultiMedia14" value="1" />
     </path>
@@ -2165,6 +2196,80 @@
         <ctl name="MultiMedia9 Mixer VOC_REC_UL" value="1" />
     </path>
 
+<!-- Add by wzg for MIUI SOS function 20191127 -->
+    <path name="incall_music_uplink speaker-protected">
+        <path name="incall_music_uplink" />
+    </path>
+
+    <path name="incall_music_uplink receiver">
+        <path name="incall_music_uplink" />
+    </path>
+
+    <path name="incall_music_uplink voice-handset">
+        <path name="incall_music_uplink" />
+    </path>
+
+    <path name="incall_music_uplink speaker-and-bt-sco-wb">
+        <path name="incall_music_uplink" />
+    </path>
+
+    <path name="incall_music_uplink2 speaker">
+        <path name="incall_music_uplink2" />
+    </path>
+
+    <path name="incall_music_uplink2 speaker-protected">
+        <path name="incall_music_uplink2" />
+    </path>
+
+    <path name="incall_music_uplink2 receiver">
+        <path name="incall_music_uplink2" />
+    </path>
+
+    <path name="incall_music_uplink2 voice-handset">
+        <path name="incall_music_uplink2" />
+    </path>
+
+    <path name="incall_music_uplink2 handset">
+        <path name="incall_music_uplink2" />
+    </path>
+
+    <path name="incall_music_uplink2 bt-sco">
+        <path name="incall_music_uplink2" />
+    </path>
+
+    <path name="incall_music_uplink2 bt-sco-wb">
+        <path name="incall_music_uplink2" />
+    </path>
+
+    <path name="incall_music_uplink2 speaker-and-bt-sco">
+        <path name="incall_music_uplink2" />
+    </path>
+
+    <path name="incall_music_uplink2 speaker-and-bt-sco-wb">
+        <path name="incall_music_uplink2" />
+    </path>
+
+    <path name="incall_music_uplink2 usb-headphones">
+        <path name="incall_music_uplink2" />
+    </path>
+
+    <path name="incall_music_uplink2 usb-headset">
+        <path name="incall_music_uplink2" />
+    </path>
+
+    <path name="incall_music_uplink2 speaker-and-usb-headphones">
+        <path name="incall_music_uplink2" />
+    </path>
+
+    <path name="incall_music_uplink2 headphones">
+        <path name="incall_music_uplink2" />
+    </path>
+
+    <path name="incall_music_uplink2 speaker-and-headphones">
+        <path name="incall_music_uplink2" />
+    </path>
+<!-- Add by wzg for MIUI SOS function 20191127 -->
+
     <path name="incall-rec-uplink bt-sco">
         <path name="incall-rec-uplink" />
     </path>
@@ -2277,10 +2382,6 @@
         <path name="incall-rec-downlink-compress" />
     </path>
 
-    <path name="incall-rec-downlink call-proxy-in">
-        <path name="incall-rec-downlink" />
-    </path>
-
     <path name="incall-rec-uplink-and-downlink">
         <path name="incall-rec-uplink" />
         <path name="incall-rec-downlink" />
@@ -2337,10 +2438,6 @@
 
     <path name="incall-rec-uplink-and-downlink-compress headset-mic">
         <path name="incall-rec-uplink-and-downlink-compress" />
-    </path>
-
-    <path name="incall-rec-uplink-and-downlink call-proxy-in">
-        <path name="incall-rec-uplink-and-downlink" />
     </path>
 
     <path name="hfp-sco">
@@ -2420,7 +2517,6 @@
         <ctl name="RX_CDC_DMA_RX_0_Voice Mixer VoiceMMode1" value="1" />
         <ctl name="VoiceMMode1_Tx Mixer TX_CDC_DMA_TX_3_MMode1" value="1" />
     </path>
-
     <path name="voicemmode1-call headphones">
         <ctl name="RX_CDC_DMA_RX_0_Voice Mixer VoiceMMode1" value="1" />
         <ctl name="VoiceMMode1_Tx Mixer TX_CDC_DMA_TX_3_MMode1" value="1" />
@@ -2478,11 +2574,6 @@
     <path name="voicemmode1-call display-port1">
         <ctl name="DISPLAY_PORT1_RX_Voice Mixer VoiceMMode1" value="1" />
         <ctl name="VoiceMMode1_Tx Mixer TX_CDC_DMA_TX_3_MMode1" value="1" />
-    </path>
-
-    <path name="voicemmode1-call call-proxy">
-        <ctl name="PROXY_RX_Voice Mixer VoiceMMode1" value="1" />
-        <ctl name="VoiceMMode1_Tx Mixer PROXY_TX_MMode1" value="1" />
     </path>
 
     <path name="voicemmode2-call">
@@ -2664,12 +2755,11 @@
     <!-- These are actual sound device specific mixer settings -->
     <path name="amic1">
         <ctl name="TX DEC0 MUX" value="SWR_MIC" />
-        <ctl name="TX SMIC MUX0" value="ADC0" />
-        <ctl name="TX_CDC_DMA_TX_3 Channels" value="One" />
-        <ctl name="TX_AIF1_CAP Mixer DEC0" value="1" />
-        <ctl name="ADC1_MIXER Switch" value="1" />
+	    <ctl name="TX SMIC MUX0" value="ADC0" />
+	    <ctl name="TX_CDC_DMA_TX_3 Channels" value="One" />
+	    <ctl name="TX_AIF1_CAP Mixer DEC0" value="1" />
+	    <ctl name="ADC1_MIXER Switch" value="1" />
     </path>
-
     <path name="amic2">
         <ctl name="TX DEC0 MUX" value="SWR_MIC" />
         <ctl name="TX SMIC MUX0" value="ADC2" />
@@ -2679,14 +2769,13 @@
         <ctl name="ADC2_MIXER Switch" value="1" />
         <ctl name="ADC2 MUX" value="INP2" />
     </path>
-
     <path name="amic3">
-        <ctl name="TX DEC0 MUX" value="SWR_MIC" />
-        <ctl name="TX SMIC MUX0" value="ADC2" />
-        <ctl name="TX_CDC_DMA_TX_3 Channels" value="One" />
-        <ctl name="TX_AIF1_CAP Mixer DEC0" value="1" />
-        <ctl name="ADC2_MIXER Switch" value="1" />
-        <ctl name="ADC2 MUX" value="INP3" />
+	    <ctl name="TX DEC0 MUX" value="SWR_MIC" />
+	    <ctl name="TX SMIC MUX0" value="ADC2" />
+	    <ctl name="TX_CDC_DMA_TX_3 Channels" value="One" />
+	    <ctl name="TX_AIF1_CAP Mixer DEC0" value="1" />
+	    <ctl name="ADC2_MIXER Switch" value="1" />
+	    <ctl name="ADC2 MUX" value="INP3" />
     </path>
 
     <path name="dmic1">
@@ -2726,7 +2815,7 @@
     </path>
 
     <path name="speaker">
-        <ctl name="WSA_CDC_DMA_RX_0 Channels" value="Two" />
+        <ctl name="TERT_MI2S_RX Channels" value="One" />
         <ctl name="WSA RX0 MUX" value="AIF1_PB" />
         <ctl name="WSA RX1 MUX" value="AIF1_PB" />
         <ctl name="WSA_RX0 INP0" value="RX0" />
@@ -2744,7 +2833,7 @@
     </path>
 
     <path name="speaker-mono">
-        <ctl name="WSA_CDC_DMA_RX_0 Channels" value="One" />
+        <ctl name="TERT_MI2S_RX Channels" value="One" />
         <ctl name="WSA RX0 MUX" value="AIF1_PB" />
         <ctl name="WSA_RX0 INP0" value="RX0" />
         <ctl name="WSA_COMP1 Switch" value="1" />
@@ -2755,7 +2844,7 @@
     </path>
 
     <path name="speaker-mono-2">
-        <ctl name="WSA_CDC_DMA_RX_0 Channels" value="One" />
+        <ctl name="TERT_MI2S_RX Channels" value="One" />
         <ctl name="WSA RX1 MUX" value="AIF1_PB" />
         <ctl name="WSA_RX1 INP0" value="RX1" />
         <ctl name="WSA_COMP2 Switch" value="1" />
@@ -2764,7 +2853,6 @@
         <ctl name="SpkrRight VISENSE Switch" value="1" />
         <ctl name="SpkrRight SWR DAC_Port Switch" value="1" />
     </path>
-
 
     <path name="speaker-hdk">
         <path name="speaker-mono" />
@@ -2860,16 +2948,21 @@
     <path name="vi-feedback-mono-2">
     </path>
 
+    <path name="tas-iv-capture">
+        <ctl name="TERT_MI2S_TX Channels" value="Two" />
+    </path>
+   <!--lct modify for no hanset voice-->
     <path name="handset">
         <ctl name="RX_MACRO RX0 MUX" value="AIF1_PB" />
         <ctl name="RX_CDC_DMA_RX_0 Channels" value="One" />
         <ctl name="RX INT0_1 MIX1 INP0" value="RX0" />
         <ctl name="RX INT0 DEM MUX" value="CLSH_DSM_OUT" />
         <ctl name="EAR_RDAC Switch" value="1" />
-        <ctl name="RDAC3_MUX" value="RX1" />
+	<ctl name="RDAC3_MUX" value="RX1" />
         <ctl name="RX_EAR Mode" value="ON" />
     </path>
 
+    <!-- 2019.12.16 longcheer lixiaona add for HTH-74171 use dmic to recording during wechar short audio message start-->
     <path name="handset-mic">
         <ctl name="TX_CDC_DMA_TX_3 Channels" value="Two" />
         <ctl name="TX DEC0 MUX" value="SWR_MIC" />
@@ -2882,6 +2975,16 @@
         <ctl name="ADC2_MIXER Switch" value="1" />
         <ctl name="ADC2 MUX" value="INP3" />
         <ctl name="IIR0 INP0 MUX" value="DEC0" />
+    </path>
+    <!-- 2019.12.16 longcheer lixiaona add for HTH-74171 use dmic to recording during wechar short audio message end-->
+    <path name="handset-mic-factory">
+        <ctl name="TX_DEC0 Volume" value="84" />
+        <path name="amic1" /> <!-- modify for using amic1 to factory test-->
+    </path>
+    <!--Add for add secondary-mic -->
+    <path name="secondary-mic-factory">
+        <ctl name="TX_DEC0 Volume" value="84" />
+        <path name="amic3" />
     </path>
 
     <path name="headphones">
@@ -2899,6 +3002,20 @@
         <ctl name="HPHL_RDAC Switch" value="1" />
         <ctl name="HPHR_RDAC Switch" value="1" />
     </path>
+
+    <!--  2019.12.17 longcheer chenqiang add for ce mode start-->
+    <path name="headphones-ce">
+        <path name="headphones" />
+        <ctl name="RX_RX0 Digital Volume" value="76" />
+        <ctl name="RX_RX1 Digital Volume" value="76" />
+    </path>
+
+    <path name="headphones-no-ce">
+        <path name="headphones" />
+        <ctl name="RX_RX0 Digital Volume" value="84" />
+        <ctl name="RX_RX1 Digital Volume" value="84" />
+    </path>
+    <!--  2019.12.17 longcheer chenqiang add for ce mode end-->
 
     <path name="headphones-44.1">
         <path name="headphones" />
@@ -2918,9 +3035,9 @@
         <ctl name="RX HPH Mode" value="CLS_H_ULP" />
     </path>
 
-     <path name="hph-class-ab-mode">
+    <path name="hph-class-ab-mode">
         <ctl name="RX HPH Mode" value="CLS_AB" />
-     </path>
+    </path>
 
     <path name="true-native-mode">
     </path>
@@ -2937,6 +3054,7 @@
     <path name="headset-mic-liquid">
         <path name="amic2" />
     </path>
+
     <path name="voice-handset">
         <path name="handset" />
     </path>
@@ -2952,6 +3070,7 @@
     <path name="voice-handset-tmus-hdk">
         <path name="handset" />
     </path>
+
     <path name="voice-speaker">
         <path name="speaker-mono" />
     </path>
@@ -3118,29 +3237,29 @@
 
     <!-- Dual MIC devices -->
     <path name="handset-dmic-endfire">
-        <ctl name="TX_CDC_DMA_TX_3 Channels" value="Two" />
-        <ctl name="TX DEC0 MUX" value="SWR_MIC" />
-        <ctl name="TX SMIC MUX0" value="ADC0" />
-        <ctl name="TX_AIF1_CAP Mixer DEC0" value="1" />
-        <ctl name="ADC1_MIXER Switch" value="1" />
-        <ctl name="TX DEC1 MUX" value="SWR_MIC" />
-        <ctl name="TX SMIC MUX1" value="ADC2" />
-        <ctl name="TX_AIF1_CAP Mixer DEC1" value="1" />
-        <ctl name="ADC2_MIXER Switch" value="1" />
-        <ctl name="ADC2 MUX" value="INP3" />
+    <ctl name="TX_CDC_DMA_TX_3 Channels" value="Two" />
+	<ctl name="TX DEC0 MUX" value="SWR_MIC" />
+	<ctl name="TX SMIC MUX0" value="ADC0" />
+	<ctl name="TX_AIF1_CAP Mixer DEC0" value="1" />
+	<ctl name="ADC1_MIXER Switch" value="1" />
+	<ctl name="TX DEC1 MUX" value="SWR_MIC" />
+	<ctl name="TX SMIC MUX1" value="ADC2" />
+	<ctl name="TX_AIF1_CAP Mixer DEC1" value="1" />
+	<ctl name="ADC2_MIXER Switch" value="1" />
+	<ctl name="ADC2 MUX" value="INP3" />
     </path>
 
     <path name="speaker-dmic-endfire">
-        <ctl name="TX_CDC_DMA_TX_3 Channels" value="Two" />
-        <ctl name="TX DEC0 MUX" value="SWR_MIC" />
-        <ctl name="TX SMIC MUX0" value="ADC0" />
-        <ctl name="TX_AIF1_CAP Mixer DEC0" value="1" />
-        <ctl name="ADC1_MIXER Switch" value="1" />
-        <ctl name="TX DEC1 MUX" value="SWR_MIC" />
-        <ctl name="TX SMIC MUX1" value="ADC2" />
-        <ctl name="TX_AIF1_CAP Mixer DEC1" value="1" />
-        <ctl name="ADC2_MIXER Switch" value="1" />
-        <ctl name="ADC2 MUX" value="INP3" />
+    <ctl name="TX_CDC_DMA_TX_3 Channels" value="Two" />
+	<ctl name="TX DEC0 MUX" value="SWR_MIC" />
+	<ctl name="TX SMIC MUX0" value="ADC0" />
+	<ctl name="TX_AIF1_CAP Mixer DEC0" value="1" />
+	<ctl name="ADC1_MIXER Switch" value="1" />
+	<ctl name="TX DEC1 MUX" value="SWR_MIC" />
+	<ctl name="TX SMIC MUX1" value="ADC2" />
+	<ctl name="TX_AIF1_CAP Mixer DEC1" value="1" />
+	<ctl name="ADC2_MIXER Switch" value="1" />
+	<ctl name="ADC2 MUX" value="INP3" />
     </path>
 
     <path name="dmic-endfire">
@@ -3168,6 +3287,12 @@
     <path name="voice-dmic-ef">
         <path name="dmic-endfire" />
     </path>
+
+    <!--  2019.12.16 longcheer puqirui add for vcamcorder dual mic path start-->
+    <path name="camcorder-dmic">
+        <path name="dmic-endfire" />
+    </path>
+    <!--  2019.12.16 longcheer puqirui add for vcamcorder dual mic path end-->
 
     <path name="voice-speaker-dmic-ef">
         <path name="speaker-dmic-endfire" />
@@ -3204,6 +3329,7 @@
     <path name="voice-rec-dmic-ef-fluence-liquid">
         <path name="dmic-endfire-liquid" />
     </path>
+
     <path name="speaker-dmic-broadside">
         <ctl name="TX_CDC_DMA_TX_3 Channels" value="Two" />
         <ctl name="TX_AIF1_CAP Mixer DEC1" value="1" />
@@ -3316,7 +3442,6 @@
         <ctl name="TTY Mode" value="HCO" />
         <path name="handset" />
     </path>
-
 
     <path name="voice-tty-hco-handset-hdk">
         <ctl name="TTY Mode" value="HCO" />
@@ -3843,6 +3968,7 @@
     <path name="incall_music_uplink bt-a2dp">
         <path name="incall_music_uplink" />
     </path>
+
     <path name="incall_music_uplink afe-proxy">
         <path name="incall_music_uplink" />
     </path>
@@ -3851,6 +3977,7 @@
         <path name="incall_music_uplink" />
     </path>
 
+   <!-- MIUI SOS patch start -->
     <path name="incall_music_uplink2">
         <ctl name="Incall_Music_2 Audio Mixer MultiMedia9" value="1" />
     </path>
@@ -3883,7 +4010,7 @@
         <path name="incall_music_uplink2" />
     </path>
 
-    <path name="incall_music_uplink2 afe-proxy">
+    <path name="incall_music_uplink2 speaker-safe-and-display-port">
         <path name="incall_music_uplink2" />
     </path>
 
@@ -3899,6 +4026,10 @@
         <path name="incall_music_uplink2" />
     </path>
 
+    <path name="incall_music_uplink2 speaker-safe-and-usb-headphones">
+        <path name="incall_music_uplink2" />
+    </path>
+
     <path name="incall_music_uplink2 headphones">
         <path name="incall_music_uplink2" />
     </path>
@@ -3907,7 +4038,15 @@
         <path name="incall_music_uplink2" />
     </path>
 
+    <path name="incall_music_uplink2 speaker-safe-and-headphones">
+        <path name="incall_music_uplink2" />
+    </path>
+
     <path name="incall_music_uplink2 speaker-and-bt-sco">
+        <path name="incall_music_uplink2" />
+    </path>
+
+    <path name="incall_music_uplink2 speaker-safe-and-bt-sco">
         <path name="incall_music_uplink2" />
     </path>
 
@@ -3916,6 +4055,10 @@
     </path>
 
     <path name="incall_music_uplink2 speaker-and-bt-a2dp">
+        <path name="incall_music_uplink2" />
+    </path>
+
+    <path name="incall_music_uplink2 speaker-safe-and-bt-a2dp">
         <path name="incall_music_uplink2" />
     </path>
 
@@ -3930,10 +4073,107 @@
     <path name="incall_music_uplink2 call-proxy">
         <path name="incall_music_uplink2" />
     </path>
+   <!-- MIUI SOS patch end -->
 
     <path name="call-proxy">
     </path>
 
     <path name="call-proxy-in">
     </path>
+
+    <path name="ultrasound-proximity">
+        <ctl name="Ultrasound Enable" value="On" />
+        <ctl name="Ultrasound Mode" value="790" />
+        <ctl name="Ultrasound Debug Mode" value="1" />
+        <ctl name="Ultrasound Log Level" value="7" />
+    </path>
+
+    <path name="ultrasound-proximity-output">
+    </path>
+
+    <path name="ultrasound-proximity-input">
+    </path>
+
+    <path name="ultrasound-gesture1">
+        <ctl name="Ultrasound Enable" value="On"/>
+        <!--  release mode  -->
+        <!--ctl name="Ultrasound Mode" value="584"/-->
+        <!--  debug mode  -->
+        <ctl name="Ultrasound Mode" value="585"/>
+        <ctl name="Ultrasound Log Level" value="7" />
+    </path>
+
+    <path name="ultrasound-gesture1-output">
+        <!--  mixer controls for RX use-case  -->
+    </path>
+
+    <path name="ultrasound-gesture1-input">
+        <!--  mixer controls for TX use-case  -->
+    </path>
+
+    <path name="ultrasound-rampdown">
+        <ctl name="Ultrasound RampDown" value="On"/>
+    </path>
+
+    <path name="ultrasound-screen-on">
+        <ctl name="Ultrasound Event" value="1"/>
+    </path>
+
+    <path name="ultrasound-output">
+        <ctl name="RX_CDC_DMA_RX_1 SampleRate" value="KHZ_96" />
+	    <ctl name="RX_CDC_DMA_RX_1 Channels" value="One" />
+        <ctl name="RX_MACRO RX2 MUX" value="AIF2_PB" />
+        <ctl name="RX INT0_2 MUX" value="RX2" />
+	    <ctl name="RX INT0 DEM MUX" value="CLSH_DSM_OUT" />
+        <ctl name="EAR_RDAC Switch" value="1" />
+        <ctl name="RDAC3_MUX" value="RX1" />
+        <ctl name="EAR PA Gain" value="G_6_DB" />
+        <ctl name="RX_EAR Mode" value="ON" />
+    </path>
+
+    <path name="ultrasound-input">
+        <ctl name="Ultrasound Custom Setting 1" value="3" />
+        <ctl name="TX_CDC_DMA_TX_4 Channels" value="Two" />
+        <ctl name="TX_CDC_DMA_TX_4 SampleRate" value="KHZ_96" />
+	    <ctl name="TX DEC4 MUX" value="SWR_MIC" />
+        <ctl name="TX SMIC MUX4" value="ADC0" />
+        <ctl name="TX_AIF2_CAP Mixer DEC4" value="1" />
+        <ctl name="ADC1_MIXER Switch" value="1" />
+	    <ctl name="TX DEC5 MUX" value="SWR_MIC" />
+	    <ctl name="TX SMIC MUX5" value="ADC2" />
+	    <ctl name="TX_AIF2_CAP Mixer DEC5" value="1" />
+        <ctl name="ADC2_MIXER Switch" value="1" />
+        <ctl name="ADC2 MUX" value="INP3" />
+    </path>
+
+    <path name="ultrasound-on">
+        <ctl name="Ultrasound Rx Port" value="On"/>
+    </path>
+
+    <path name="ultrasound-output-stereo">
+        <!--  mixer controls for receiver/speaker stereo mode  -->
+    </path>
+
+    <path name="ultrasound-input-secondary">
+        <ctl name="Ultrasound Custom Setting 1" value="3" />
+        <ctl name="TX_CDC_DMA_TX_4 Channels" value="Two" />
+        <ctl name="TX_CDC_DMA_TX_4 SampleRate" value="KHZ_96" />
+	    <ctl name="TX DEC4 MUX" value="SWR_MIC" />
+        <ctl name="TX SMIC MUX4" value="ADC0" />
+        <ctl name="TX_AIF2_CAP Mixer DEC4" value="1" />
+        <ctl name="ADC1_MIXER Switch" value="1" />
+	    <ctl name="TX DEC5 MUX" value="SWR_MIC" />
+	    <ctl name="TX SMIC MUX5" value="ADC2" />
+	    <ctl name="TX_AIF2_CAP Mixer DEC5" value="1" />
+        <ctl name="ADC2_MIXER Switch" value="1" />
+        <ctl name="ADC2 MUX" value="INP3" />
+    </path>
+
+    <path name="ultrasound-suspend">
+        <ctl name="Ultrasound Suspend" value="1"/>
+    </path>
+
+    <path name ="voice-tx">
+    </path>
+
 </mixer>
