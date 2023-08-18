@@ -109,15 +109,15 @@ ODM_MANIFEST_SKUS += \
 ODM_MANIFEST_JOYEUSE_FILES := $(DEVICE_PATH)/manifest_joyeuse.xml
 
 # Init
-TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_miatoll
-TARGET_RECOVERY_DEVICE_MODULES := libinit_miatoll
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):init_xiaomi_miatoll
+TARGET_RECOVERY_DEVICE_MODULES := init_xiaomi_miatoll
 
 # Media
 TARGET_USES_ION := true
 TARGET_DISABLED_UBWC := true
 
 # OTA assert
-TARGET_OTA_ASSERT_DEVICE := curtana,excalibur,gram,joyeuse
+TARGET_OTA_ASSERT_DEVICE := curtana,excalibur,gram,joyeuse,miatoll
 
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 134217728
