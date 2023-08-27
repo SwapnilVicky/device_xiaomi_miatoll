@@ -234,6 +234,9 @@ vendor.usb.use_gadget_hal=0
 # Volume steps
 ro.config.vc_call_vol_steps=10
 
+# Watchdog
+ro.hw_timeout_multiplier=3
+
 # WiFi
 wifi.aware.interface=wifi-aware0
 
