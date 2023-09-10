@@ -1,4 +1,4 @@
-service thermal-engine /vendor/bin/thermal-engine
+service vendor.thermal-engine /vendor/bin/thermal-engine
     class main
     user root
     group root
@@ -10,7 +10,7 @@ service thermal-engine /vendor/bin/thermal-engine
 
 on boot && property:ro.product.vendor.device=*
     mount none /vendor/etc/thermal-engine-map-${ro.product.vendor.device}.conf /vendor/etc/thermal-engine-map.conf bind
-    start thermal-engine
+    start vendor.thermal-engine
 
 service vendor.nfc_hal_service /vendor/bin/hw/android.hardware.nfc@1.2-service
     override
