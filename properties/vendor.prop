@@ -220,6 +220,7 @@ vendor.video.disable.ubwc=1
 
 # Perf
 ro.vendor.extension_library=libqti-perfd-client.so
+vendor.perf.framepacing.enable=1
 
 # Radio
 persist.radio.multisim.config=dsds
