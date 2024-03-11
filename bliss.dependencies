@@ -1,0 +1,32 @@
+[
+  {
+    "remote": "github",
+    "repository": "BlissRoms-Devices/android_hardware_xiaomi",
+    "target_path": "hardware/xiaomi",
+    "branch": "universe"
+  },
+  {
+    "remote": "github",
+    "repository": "BlissRoms-Devices/platform_kernel_xiaomi_sm6250",
+    "target_path": "kernel/xiaomi/sm6250",
+    "branch": "universe"
+  },
+  {
+    "remote": "github",
+    "repository": "BlissRoms-Devices/platform_vendor_xiaomi_miatoll",
+    "target_path": "vendor/xiaomi/miatoll",
+    "branch": "universe"
+  },
+  {
+    "remote": "github",
+    "repository": "BlissRoms-Devices/platform_device_xiaomi_sm6250-common",
+    "target_path": "device/xiaomi/sm6250-common",
+    "branch": "universe"
+  },
+  {
+    "remote": "github",
+    "repository": "BlissRoms-Devices/platform_vendor_xiaomi_sm6250-common",
+    "target_path": "vendor/xiaomi/sm6250-common",
+    "branch": "universe"
+  }
+]
