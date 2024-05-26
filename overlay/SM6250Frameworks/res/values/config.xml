@@ -584,4 +584,8 @@
 
     <!-- Bytes that the PinnerService will pin for Home app -->
     <integer name="config_pinnerHomePinBytes">6291456</integer>
+
+     <!-- Switch to AVC 3.1 for screen recording. -->
+    <string name="config_screenRecorderAVCProfileLevel" translatable="false">3.1</string>
+
 </resources>
