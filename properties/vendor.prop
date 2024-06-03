@@ -135,6 +135,11 @@ ro.crypto.volume.options=::v2
 dalvik.vm.dex2oat64.enabled=true
 dalvik.vm.systemuicompilerfilter=speed
 
+# Data
+ro.vendor.use_data_netmgrd=true
+persist.vendor.data.iwlan.enable=true
+persist.vendor.data.mode=concurrent
+
 # Display
 debug.sdm.support_writeback=0
 debug.sf.disable_client_composition_cache=1
@@ -215,8 +220,11 @@ persist.radio.multisim.config=dsds
 persist.vendor.radio.add_power_save=1
 persist.vendor.radio.custom_ecc=1
 persist.vendor.radio.data_con_rprt=1
+persist.vendor.radio.enableadvancedscan=true
+persist.vendor.radio.manual_nw_rej_ct=1
 persist.vendor.radio.procedure_bytes=SKIP
 persist.vendor.radio.rat_on=combine
+persist.vendor.radio.sib16_support=1
 persist.vendor.radio.snapshot_enabled=1
 persist.vendor.radio.snapshot_timer=5
 ro.com.android.dataroaming=false
