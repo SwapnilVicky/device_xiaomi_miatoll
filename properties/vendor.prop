@@ -245,7 +245,7 @@ ro.config.media_vol_steps=25
 ro.config.vc_call_vol_steps=10
 
 # Watchdog
-ro.hw_timeout_multiplier=3
+ro.hw_timeout_multiplier=6
 
 # WiFi
 wifi.aware.interface=wifi-aware0
