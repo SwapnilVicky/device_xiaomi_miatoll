@@ -186,6 +186,9 @@ on boot
 
     setprop wifi.interface wlan0
 
+    # default country code
+    setprop ro.boot.wificountrycode 00
+
     setprop ro.telephony.call_ring.multiple false
 
     #Remove SUID bit for iproute2 ip tool
