@@ -1,0 +1,2 @@
+# Allow rmt_storage to read from sysfs
+allow vendor_rmt_storage sysfs:file read;

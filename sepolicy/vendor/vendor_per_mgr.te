@@ -1,0 +1,2 @@
+# Allow vendor_per_mgr to read from sysfs
+allow vendor_per_mgr sysfs:file read;

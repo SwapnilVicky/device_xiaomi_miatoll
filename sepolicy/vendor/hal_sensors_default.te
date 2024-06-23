@@ -1,0 +1,2 @@
+# Allow hal_sensors_default to access vendor_diag_device
+allow hal_sensors_default vendor_diag_device:chr_file { read write open };
