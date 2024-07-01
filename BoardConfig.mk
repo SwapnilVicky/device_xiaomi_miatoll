@@ -83,6 +83,7 @@ BOARD_RAMDISK_USE_LZ4 := true
 TARGET_KERNEL_ADDITIONAL_FLAGS += LD=ld.lld AR=llvm-ar NM=llvm-nm STRIP=llvm-strip OBJCOPY=llvm-objcopy OBJDUMP=llvm-objdump
 TARGET_KERNEL_CONFIG := vendor/xiaomi/miatoll_defconfig
 TARGET_KERNEL_SOURCE := kernel/xiaomi/sm6250
+KERNEL_CC := CC=clang
 
 BOARD_KERNEL_CMDLINE += androidboot.console=ttyMSM0
 BOARD_KERNEL_CMDLINE += androidboot.fstab_suffix=qcom
