@@ -47,7 +47,8 @@ PRODUCT_PACKAGES += \
     libspkrprot \
     libssrec \
     libvolumelistener \
-    sound_trigger.primary.atoll:32
+    sound_trigger.primary.atoll:32 \
+    tinymix
 
 PRODUCT_COPY_FILES += \
      $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/audio/,$(TARGET_COPY_OUT_VENDOR)/etc)
