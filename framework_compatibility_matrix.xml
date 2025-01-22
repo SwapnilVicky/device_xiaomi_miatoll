@@ -4,6 +4,22 @@
      SPDX-License-Identifier: Apache-2.0
 -->
 <compatibility-matrix version="2.0" type="framework">
+    <hal format="hidl" optional="true">
+        <name>android.hardware.audio.effect</name>
+        <version>7.0</version>
+        <interface>
+            <name>IEffectsFactory</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>android.hardware.audio</name>
+        <version>7.0</version>
+        <interface>
+            <name>IDevicesFactory</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
     <hal format="aidl" optional="true">
         <name>android.hardware.biometrics.fingerprint</name>
         <version>4</version>
