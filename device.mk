@@ -134,6 +134,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.ir-service.example
 
+# Kernel
+PRODUCT_OTA_ENFORCE_VINTF_KERNEL_REQUIREMENTS := false
+
 # Lineage Health
 PRODUCT_PACKAGES += \
     vendor.lineage.health-service.default
