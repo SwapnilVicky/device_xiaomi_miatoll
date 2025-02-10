@@ -4,7 +4,7 @@
 //
 
 cc_library_static {
-    name: "libinit_xiaomi_atoll",
+    name: "libinit_xiaomi_miatoll",
     srcs: [
         "libinit_dalvik_heap.cpp",
         "libinit_variant.cpp",
@@ -16,9 +16,9 @@ cc_library_static {
 }
 
 cc_library_static {
-    name: "init_xiaomi_atoll",
-    srcs: ["init_xiaomi_atoll.cpp"],
-    whole_static_libs: ["libinit_xiaomi_atoll"],
+    name: "init_xiaomi_miatoll",
+    srcs: ["init_xiaomi_miatoll.cpp"],
+    whole_static_libs: ["libinit_xiaomi_miatoll"],
     include_dirs: ["system/core/init"],
     recovery_available: true,
 }
