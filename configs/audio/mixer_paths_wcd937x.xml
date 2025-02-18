@@ -2978,12 +2978,12 @@
     </path>
     <!-- 2019.12.16 longcheer lixiaona add for HTH-74171 use dmic to recording during wechar short audio message end-->
     <path name="handset-mic-factory">
-        <ctl name="TX_DEC0 Volume" value="84" />
+        <ctl name="TX_DEC0 Volume" value="94" />
         <path name="amic1" /> <!-- modify for using amic1 to factory test-->
     </path>
     <!--Add for add secondary-mic -->
     <path name="secondary-mic-factory">
-        <ctl name="TX_DEC0 Volume" value="84" />
+        <ctl name="TX_DEC0 Volume" value="94" />
         <path name="amic3" />
     </path>
 
@@ -3047,7 +3047,7 @@
     </path>
 
     <path name="headset-mic">
-        <ctl name="TX_DEC0 Volume" value="84" />
+        <ctl name="TX_DEC0 Volume" value="94" />
         <path name="amic2" />
     </path>
 
@@ -3356,7 +3356,7 @@
         <ctl name="TX DMIC MUX2" value="DMIC1" />
         <ctl name="TX_AIF1_CAP Mixer DEC3" value="1" />
         <ctl name="TX DMIC MUX3" value="DMIC3" />
-        <ctl name="TX_DEC3 Volume" value="84" />
+        <ctl name="TX_DEC3 Volume" value="94" />
     </path>
 
     <path name="speaker-tmic">
@@ -3367,7 +3367,7 @@
         <ctl name="TX DMIC MUX2" value="DMIC0" />
         <ctl name="TX_AIF1_CAP Mixer DEC3" value="1" />
         <ctl name="TX DMIC MUX3" value="DMIC3" />
-        <ctl name="TX_DEC3 Volume" value="84" />
+        <ctl name="TX_DEC3 Volume" value="94" />
     </path>
 
     <path name="voice-speaker-tmic">
@@ -3383,7 +3383,7 @@
         <ctl name="TX DMIC MUX2" value="DMIC1" />
         <ctl name="TX_AIF1_CAP Mixer DEC3" value="1" />
         <ctl name="TX DMIC MUX3" value="DMIC3" />
-        <ctl name="TX_DEC3 Volume" value="84" />
+        <ctl name="TX_DEC3 Volume" value="94" />
         <ctl name="TX_AIF1_CAP Mixer DEC4" value="1" />
         <ctl name="TX DMIC MUX4" value="DMIC4" />
     </path>
