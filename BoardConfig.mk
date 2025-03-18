@@ -65,7 +65,6 @@ DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest.xml
 
 # Init
 TARGET_INIT_VENDOR_LIB ?= //$(DEVICE_PATH):init_xiaomi_miatoll
-TARGET_RECOVERY_DEVICE_MODULES ?= init_xiaomi_miatoll
 
 # Kernel
 BOARD_KERNEL_BASE := 0x00000000
