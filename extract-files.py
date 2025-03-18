@@ -50,6 +50,8 @@ blob_fixups: blob_fixups_user_type = {
         .regex_replace('0x1F', '0x0'),
     'vendor/etc/init/android.hardware.keymaster@4.0-service-qti.rc': blob_fixup()
         .regex_replace('@4.0', '@4.1'),
+    'vendor/lib/hw/audio.primary.atoll.so': blob_fixup()
+        .add_needed('fakelogprint.so'),
     'vendor/lib64/camera/components/com.qti.node.watermark.so': blob_fixup()
         .add_needed('libpiex_shim.so'),
     'vendor/lib64/hw/fingerprint.fpc.default.so': blob_fixup()
