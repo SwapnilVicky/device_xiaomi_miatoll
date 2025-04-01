@@ -1081,7 +1081,7 @@ vendor/bin/cnss-daemon
 
 # WiFi Display (system) - from sunstone
 system/framework/WfdCommon.jar;BOOT_JAR|08bf9850ac45396fe753e208c4d63ec43389dce2
-system_ext/bin/wfdservice64|77de5e319297d09b29712160ed0a9dbdced58911
+system_ext/bin/wfdservice64|7def7d1989d94c024bc4b66feb1935e3e4c28a0b
 system_ext/etc/init/wfdservice.rc|3dfd29a44f37c971b7707b6e47b2b601a9119d12
 system_ext/etc/permissions/wfd-system-ext-privapp-permissions-qti.xml|10dcd4e58f0652d800d48ae5b76e4fab43fda214
 system_ext/etc/seccomp_policy/wfdservice64.policy|1e331272649395423b11c575892e0bdc9433b820
