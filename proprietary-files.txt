@@ -3,7 +3,6 @@
 # excalibur: V14.0.2.0.SJXINXM (EXCALIBURINGlobal)
 # joyeuse: V14.0.3.0.SJZMIXM (JOYEUSEGlobal)
 # mojito: V14.0.9.0.SKGMIXM (MOJITOGlobal)
-# sunstone: OS1.0.9.0.UMQMIXM (SUNSTONEGlobal)
 # vayu: V14.0.3.0.TJUMIXM (VAYUGlobal)
 
 # Current blobs with ELF checks disabled:
@@ -470,20 +469,20 @@ vendor/lib64/libcvp_common.so
 vendor/lib64/libcvp_stub.so
 vendor/lib64/vendor.qti.hardware.cvp@1.0.so
 
-# DPM (system) - from sunstone
-system_ext/bin/dpmd|5a42bc4e5c841573579e0718d6e80e688767eeed
+# DPM (system) - from dodge
+system_ext/bin/dpmd|9dc27f51645a8aaf80ad91347e69c2b0e846170c
 system_ext/etc/dpm/dpm.conf|95e27da8c989e96c6faea6f0697bce11955b62a5
 system_ext/etc/init/dpmd.rc|738b638ff04cda368e22c03e16baf90ba157a6fc
 system_ext/etc/permissions/com.qti.dpmframework.xml|c4b7ad0879d00c1eba4f3fe3a88ddb8aa153629a
-system_ext/etc/permissions/dpmapi.xml|255903759a60a31c0876ec004e74554c753270fe
-system_ext/framework/com.qti.dpmframework.jar|4fc38f534c788b80b432b385e07973bdd6e8c98f
-system_ext/framework/dpmapi.jar|c379f7a671439737fbff03411f28891d0f9313c9
-system_ext/lib64/com.qualcomm.qti.dpm.api@1.0.so|3e9786c8263de4135926a91083b70a737fc1d28b
-system_ext/lib64/libdpmctmgr.so|206949728b98a513683468209dbce86ed29412b8
-system_ext/lib64/libdpmfdmgr.so|da636fca9a9a91a897d17fd519448b10053a696b
-system_ext/lib64/libdpmframework.so|d974f04f110b3c1a1282d78bb0ff8a29dc022439
-system_ext/lib64/libdpmtcm.so|5521469cac3a2bec3da66cd36637df83ee59b97e
-system_ext/priv-app/dpmserviceapp/dpmserviceapp.apk|68c3c5c13cdba3575579b5081089037bada63d30
+system_ext/etc/permissions/dpmapi.xml|5ad4c0af5db05145f6df8383ab53b0fcde0a8a04
+system_ext/framework/com.qti.dpmframework.jar|9843c8769469a6d8e3ddcd0aab709bf77c57128e
+system_ext/framework/dpmapi.jar|504f269da33eae85b458dddcc99209f21506ce5c
+system_ext/lib64/com.qualcomm.qti.dpm.api@1.0.so|5372d1d4027be249980ded83814eb3b6e1287e0f
+system_ext/lib64/libdpmctmgr.so|2858de4c788c3415df3e4abdbf068a63507649b4
+system_ext/lib64/libdpmfdmgr.so|a6badbb2524bd067b4d704e8e9e6d6310197ede1
+system_ext/lib64/libdpmframework.so|7e58cefd83a88e99239550035370761435c1df8c
+system_ext/lib64/libdpmtcm.so|57b540062aa68d78a11a77cf4570f3ea3a0ec47e
+system_ext/priv-app/dpmserviceapp/dpmserviceapp.apk|081faf4b5e7c8f54105d3b403bb28953b933fc5e
 
 # DPM (vendor)
 vendor/bin/dpmQmiMgr
