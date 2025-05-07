@@ -2,6 +2,9 @@
 audio.offload.min.duration.secs=30
 vendor.fastrpc.disable.adsprpcd_sensorspd.daemon=1
 
+# Audio service timeout
+audio.service.client_wait_ms=10000
+
 # CNE
 persist.vendor.cne.feature=1
 
