@@ -56,6 +56,3 @@
 
 # Thermal
 /data/vendor/thermal(/.*)?                                                    u:object_r:vendor_thermal_data_file:s0
-
-# Time
-/vendor/bin/timekeep                                                          u:object_r:timekeep_exec:s0
