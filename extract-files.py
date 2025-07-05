@@ -52,6 +52,8 @@ blob_fixups: blob_fixups_user_type = {
         .regex_replace('@4.0', '@4.1'),
     'vendor/lib/hw/audio.primary.atoll.so': blob_fixup()
         .add_needed('fakelogprint.so'),
+    ('vendor/lib64/camera/components/com.qti.node.dewarp.so', 'vendor/lib64/camera/components/com.vidhance.node.eis.so'): blob_fixup()
+        .replace_needed('libui.so', 'libui-v34.so'),
     'vendor/lib64/camera/components/com.qti.node.watermark.so': blob_fixup()
         .add_needed('libpiex_shim.so'),
     'vendor/lib64/hw/fingerprint.fpc.default.so': blob_fixup()
