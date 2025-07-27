@@ -163,6 +163,7 @@ VENDOR_SECURITY_PATCH := $(PLATFORM_SECURITY_PATCH)
 include device/lineage/sepolicy/libperfmgr/sepolicy.mk
 include device/qcom/sepolicy_vndr/SEPolicy.mk
 include hardware/sony/timekeep/sepolicy/SEPolicy.mk
+include $(DEVICE_PATH)/sepolicy/SEPolicy-diag.mk
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 
 # Updater

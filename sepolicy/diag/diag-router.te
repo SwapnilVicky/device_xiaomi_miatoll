@@ -1,0 +1,22 @@
+type vendor_diag-router, domain;
+type vendor_diag-router_exec, exec_type, vendor_file_type, file_type;
+
+init_daemon_domain(vendor_diag-router)
+
+hal_server_domain(vendor_diag-router, vendor_hal_diaghal)
+hal_client_domain(vendor_diag-router, hal_allocator)
+binder_call(vendor_hal_diaghal_client, vendor_hal_diaghal_server)
+binder_call(vendor_hal_diaghal_server, vendor_hal_diaghal_client)
+
+hal_attribute_hwservice(vendor_hal_diaghal, vendor_hal_diaghal_hwservice)
+
+allow vendor_diag-router functionfs:dir r_dir_perms;
+allow vendor_diag-router functionfs:file rw_file_perms;
+
+allow vendor_diag-router self:qipcrtr_socket create_socket_perms_no_ioctl;
+
+allow vendor_diag-router vendor_mhi_diag_device:chr_file rw_file_perms;
+
+allow vendor_diag-router self:netlink_kobject_uevent_socket create_socket_perms_no_ioctl;
+
+allow { domain -coredomain -hal_configstore -vendor_init} vendor_diag-router:unix_stream_socket connectto;
