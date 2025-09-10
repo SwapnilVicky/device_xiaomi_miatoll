@@ -19,3 +19,39 @@ on init && property:ro.boot.product.hardware.sku=nfc
 on post-fs-data && property:ro.boot.product.hardware.sku=nfc
     mkdir /data/vendor/nfc 0770 nfc nfc
     mkdir /data/vendor/nfc/param 0770 nfc nfc
+
+# Set Attestation props for each miatoll device
+on property:ro.boot.hwname=curtana && property:ro.boot.hwc=India
+    setprop ro.product.manufacturer_for_attestation Xiaomi
+    setprop ro.product.brand_for_attestation Redmi
+    setprop ro.product.device_for_attestation curtana
+    setprop ro.product.name_for_attestation "Redmi Note 10 Lite"
+    setprop ro.product.model_for_attestation "Redmi Note 10 Lite"
+
+on property:ro.boot.hwname=curtana && property:ro.boot.hwc!=India
+    setprop ro.product.manufacturer_for_attestation Xiaomi
+    setprop ro.product.brand_for_attestation Redmi
+    setprop ro.product.device_for_attestation curtana
+    setprop ro.product.name_for_attestation "Redmi Note 9S"
+    setprop ro.product.model_for_attestation "Redmi Note 9S"
+
+on property:ro.boot.hwname=joyeuse
+    setprop ro.product.manufacturer_for_attestation Xiaomi
+    setprop ro.product.brand_for_attestation Redmi
+    setprop ro.product.device_for_attestation joyeuse
+    setprop ro.product.name_for_attestation "Redmi Note 9 Pro"
+    setprop ro.product.model_for_attestation "Redmi Note 9 Pro"
+
+on property:ro.boot.hwname=excalibur
+    setprop ro.product.manufacturer_for_attestation Xiaomi
+    setprop ro.product.brand_for_attestation Redmi
+    setprop ro.product.device_for_attestation excalibur
+    setprop ro.product.name_for_attestation "Redmi Note 9 Pro Max"
+    setprop ro.product.model_for_attestation "Redmi Note 9 Pro Max"
+
+on property:ro.boot.hwname=gram
+    setprop ro.product.manufacturer_for_attestation Xiaomi
+    setprop ro.product.brand_for_attestation POCO
+    setprop ro.product.device_for_attestation gram
+    setprop ro.product.name_for_attestation "POCO M2 Pro"
+    setprop ro.product.model_for_attestation "POCO M2 Pro"
