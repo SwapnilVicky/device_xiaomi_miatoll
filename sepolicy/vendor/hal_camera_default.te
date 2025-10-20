@@ -6,3 +6,6 @@ r_dir_file(hal_camera_default, camera_persist_file)
 r_dir_file(hal_camera_default, sysfs_leds)
 
 allow hal_camera_default system_server:binder { call transfer };
+
+# Allow the camera HAL to get attributes and map the NFC property file
+allow hal_camera_default nfc_prop:file { getattr map };
