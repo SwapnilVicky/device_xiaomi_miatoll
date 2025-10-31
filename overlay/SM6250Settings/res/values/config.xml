@@ -12,4 +12,7 @@
     <!-- Show Force LTE_CA toggle -->
     <bool name="config_showForceLteCaToggle" translatable="false">true</bool>
 
+    <!-- Show the GPG UID (name/email) -->
+    <bool name="config_show_gpg_uid">true</bool>
+
 </resources>
