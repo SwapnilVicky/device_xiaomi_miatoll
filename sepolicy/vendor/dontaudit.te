@@ -1,0 +1,15 @@
+# Suppress sys_admin capability denials for these domains
+dontaudit netutils_wrapper self:capability sys_admin;
+dontaudit vendor_modprobe self:capability sys_admin;
+dontaudit vdc self:capability sys_admin;
+dontaudit hal_power_default self:capability sys_admin;
+dontaudit hal_thermal_default self:capability sys_admin;
+dontaudit vendor_irsc_util self:capability sys_admin;
+dontaudit vendor_rfs_access self:capability sys_admin;
+dontaudit vendor_rmt_storage self:capability sys_admin;
+dontaudit vendor_thermal-engine self:capability sys_admin;
+dontaudit vendor_dpmd self:capability sys_admin;
+dontaudit vendor_netmgrd self:capability sys_admin;
+dontaudit vold_prepare_subdirs self:capability sys_admin;
+dontaudit vendor_init-qcom-sensors-sh self:capability sys_admin;
+dontaudit untrusted_app self:capability sys_admin;
