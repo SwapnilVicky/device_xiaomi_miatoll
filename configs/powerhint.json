@@ -44,9 +44,9 @@
     },
     {
       "Name": "UclampTAMin",
-      "Path": "/dev/cpuctl/top-app/cpu.uclamp.min",
+      "Path": "/dev/cpuset/top-app/uclamp.min",
       "Values": [
-        "0",
+        "10",
         "78",
         "100"
       ],
@@ -55,7 +55,7 @@
     },
     {
       "Name": "UclampFgMin",
-      "Path": "/dev/cpuctl/foreground/cpu.uclamp.min",
+      "Path": "/dev/cpuset/foreground/uclamp.min",
       "Values": [
         "0",
         "100"

@@ -64,18 +64,18 @@
     },
     {
       "Name": "UClampMin",
-      "Controller": "cpu",
-      "File": "cpu.uclamp.min"
+      "Controller": "cpuset",
+      "File": "uclamp.min"
     },
     {
       "Name": "UClampMax",
-      "Controller": "cpu",
-      "File": "cpu.uclamp.max"
+      "Controller": "cpuset",
+      "File": "uclamp.max"
     },
     {
       "Name": "UClampLatencySensitive",
-      "Controller": "cpu",
-      "File": "cpu.uclamp.latency_sensitive"
+      "Controller": "cpuset",
+      "File": "uclamp.latency_sensitive"
     },
     {
       "Name": "FreezerState",
