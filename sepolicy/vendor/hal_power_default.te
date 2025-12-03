@@ -2,6 +2,8 @@
 allow hal_power_default sysfs_touchpanel:dir search;
 allow hal_power_default sysfs_touchpanel:file rw_file_perms;
 
+hal_client_domain(hal_power_default, hal_thermal)
+
 allow hal_power_default {
   proc
   proc_sched
